@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.13)  21 DEC 2021 20:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.13)  22 DEC 2021 15:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/chris/Desktop/MPS/Vorlage/Antriebstechnik_Auswertung.tex
-(/home/chris/Desktop/MPS/Vorlage/Antriebstechnik_Auswertung.tex
+**/home/chris/Desktop/MPS/Projekt_Doku/Vorlage.tex
+(/home/chris/Desktop/MPS/Projekt_Doku/Vorlage.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2020/01/24 v3.29 KOMA-Script document class (article)
@@ -183,7 +183,9 @@ Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthograp
  (/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngermanb.ldf
 Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthography)
 Package babel Info: Making " an active character on input line 121.
-))) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+))) (/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip63
 
@@ -646,43 +648,53 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count298
 \l__pdf_internal_box=\box95
-) (/home/chris/Desktop/MPS/Vorlage/Antriebstechnik_Auswertung.aux)
-\openout1 = `Antriebstechnik_Auswertung.aux'.
+) (/home/chris/Desktop/MPS/Projekt_Doku/Vorlage.aux)
+\openout1 = `Vorlage.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 26.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 35.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 35.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 26.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 26.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 35.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 35.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 26.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 26.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 35.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 35.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+\symgns@font=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/futs/m/n --> TS1/futs/b/n on input line 35.
+Package gensymb Info: Math companion symbols declared on input line 35.
+LaTeX Info: Redefining \degree on input line 35.
+LaTeX Info: Redefining \celsius on input line 35.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 35.
+LaTeX Info: Redefining \ohm on input line 35.
+Package gensymb Info: Using \textohm for \ohm on input line 35.
+Package gensymb Info: Using \textmu for \micro on input line 35.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count299
@@ -702,8 +714,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 26.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 26.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 35.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 35.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -747,7 +759,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 26.
+Package hyperref Info: Link coloring ON on input line 35.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -757,12 +769,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count305
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
- (/home/chris/Desktop/MPS/Vorlage/Antriebstechnik_Auswertung.out) (/home/chris/Desktop/MPS/Vorlage/Antriebstechnik_Auswertung.out)
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
+ (/home/chris/Desktop/MPS/Projekt_Doku/Vorlage.out) (/home/chris/Desktop/MPS/Projekt_Doku/Vorlage.out)
 \@outlinefile=\write3
-\openout3 = `Antriebstechnik_Auswertung.out'.
+\openout3 = `Vorlage.out'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -771,7 +783,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 26.
+(scrartcl)           before \begin{document} on input line 35.
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -780,122 +792,143 @@ Package auxhook Info: \AddLineBeginMainAux comes a little late,
 (auxhook)             because the main .aux file is already opened on input line 168.
 \BKM@id=\count306
 ))
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 35.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 37.
+ (/usr/share/texmf/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 62.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 35.
+(Font)              scaled to size 9.19998pt on input line 62.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 35.
+(Font)              scaled to size 6.99199pt on input line 62.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 35.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+(Font)              scaled to size 5.51999pt on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 35.
+(Font)              scaled to size 9.19998pt on input line 62.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 35.
+(Font)              scaled to size 6.99199pt on input line 62.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 35.
-<./Bilder/hsLogo.jpeg, id=4, 290.08376pt x 175.65625pt>
-File: ./Bilder/hsLogo.jpeg Graphic file (type jpg)
-<use ./Bilder/hsLogo.jpeg>
-Package pdftex.def Info: ./Bilder/hsLogo.jpeg  used on input line 38.
-(pdftex.def)             Requested size: 80.0pt x 48.44365pt.
+(Font)              scaled to size 5.51999pt on input line 62.
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 62.
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+)
+<Bilder/BLDC_Aussteuerung.png, id=5, 702.82574pt x 511.9125pt>
+File: Bilder/BLDC_Aussteuerung.png Graphic file (type png)
+<use Bilder/BLDC_Aussteuerung.png>
+Package pdftex.def Info: Bilder/BLDC_Aussteuerung.png  used on input line 83.
+(pdftex.def)             Requested size: 236.84843pt x 172.50916pt.
+<Bilder/BLDC_Schematic.png, id=6, 1064.17575pt x 596.2275pt>
+File: Bilder/BLDC_Schematic.png Graphic file (type png)
+<use Bilder/BLDC_Schematic.png>
+Package pdftex.def Info: Bilder/BLDC_Schematic.png  used on input line 98.
+(pdftex.def)             Requested size: 236.84843pt x 132.69887pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Bilder/hsLogo.jpeg>]
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 60.
- (/usr/share/texmf/tex/latex/lm/t1lmss.fd
-File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (/home/chris/Desktop/MPS/Vorlage/Antriebstechnik_Auswertung.toc)
-\tf@toc=\write4
-\openout4 = `Antriebstechnik_Auswertung.toc'.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/chris/Desktop/MPS/Projekt_Doku/Bilder/BLDC_Aussteuerung.png> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/BLDC_Schematic.png>]
+<Bilder/PCB_Querschnitt.png, id=30, 361.35pt x 96.36pt>
+File: Bilder/PCB_Querschnitt.png Graphic file (type png)
+<use Bilder/PCB_Querschnitt.png>
+Package pdftex.def Info: Bilder/PCB_Querschnitt.png  used on input line 123.
+(pdftex.def)             Requested size: 236.84843pt x 63.15962pt.
+<Bilder/BLDCMotor.jpg, id=33, 4015.0pt x 3011.25pt>
+File: Bilder/BLDCMotor.jpg Graphic file (type jpg)
+<use Bilder/BLDCMotor.jpg>
+Package pdftex.def Info: Bilder/BLDCMotor.jpg  used on input line 149.
+(pdftex.def)             Requested size: 236.84843pt x 177.63464pt.
 
- [2]
-<./Bilder/Rot_Masse.png, id=26, 642.4pt x 549.05125pt>
-File: ./Bilder/Rot_Masse.png Graphic file (type png)
-<use ./Bilder/Rot_Masse.png>
-Package pdftex.def Info: ./Bilder/Rot_Masse.png  used on input line 72.
-(pdftex.def)             Requested size: 80.0pt x 68.37152pt.
-
-
-LaTeX Warning: Command \ss invalid in math mode on input line 79.
-
-
-LaTeX Warning: Command \ss invalid in math mode on input line 93.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--111
-
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
+[]\T1/futs/m/n/10 TDK-Lambda Ger-ma-ny GmbH [on-li-ne],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--111
-
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
+\T1/futs/m/n/10 [Zu-griff am 22.12.2021] Ver-fueg-bar un-ter:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--130
-
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
+\T1/futs/m/n/10 https://www.emea.lambda.tdk.com/de/KB/Was-
  []
 
 
-Overfull \hbox (5.8495pt too wide) in paragraph at lines 138--142
-\T1/futs/m/n/10 Die Pro-blem-stel-lung sieht schme-tisch wie folgt aus. Die Ge-schwin-dig-keit ist das In-te-gral der Be-schleu-ni-gung $\FML/futmi/m/it/10 v \FMS/futm/m/n/10 Å$$[][] \FML/futmi/m/it/10 a dt$\T1/futs/m/n/10 .
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
+\T1/futs/m/n/10 Sie-¸ber-die-Lebensdauer-von-Stromversorgungen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--142
-
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+[]\T1/futs/m/n/10 Steven Kee-ping: An In-tro-duc-ti-on to Brus-
  []
 
-<./Bilder/Geschwindigkeit.png, id=27, 702.625pt x 524.96124pt>
-File: ./Bilder/Geschwindigkeit.png Graphic file (type png)
-<use ./Bilder/Geschwindigkeit.png>
-Package pdftex.def Info: ./Bilder/Geschwindigkeit.png  used on input line 145.
-(pdftex.def)             Requested size: 200.0pt x 149.43127pt.
-<./Bilder/weg.png, id=30, 747.79375pt x 614.295pt>
-File: ./Bilder/weg.png Graphic file (type png)
-<use ./Bilder/weg.png>
-Package pdftex.def Info: ./Bilder/weg.png  used on input line 155.
-(pdftex.def)             Requested size: 200.0pt x 164.29651pt.
-[3
 
- <./Bilder/Rot_Masse.png>] [4 <./Bilder/Geschwindigkeit.png> <./Bilder/weg.png>] [5] (/home/chris/Desktop/MPS/Vorlage/Antriebstechnik_Auswertung.lof)
-\tf@lof=\write5
-\openout5 = `Antriebstechnik_Auswertung.lof'.
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+\T1/futs/m/n/10 hless DC Mo-tor Con-trol, Digi-Key Elec-tro-nics,
+ []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 206.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
- (/home/chris/Desktop/MPS/Vorlage/Antriebstechnik_Auswertung.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 206.
-Package rerunfilecheck Info: File `Antriebstechnik_Auswertung.out' has not changed.
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+\T1/futs/m/n/10 https://www.digikey.de/de/articles/an-introduction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+[]\T1/futs/m/n/10 Cree, Inc. Op-ti-mi-zing PCB Ther-mal Per-for-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+\T1/futs/m/n/10 man-ce for Cree XLamp LEDs 22.12.2010,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+\T1/futs/m/n/10 [Zu-griff am 22.12.2021] Ver-fueg-bar un-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+\T1/futs/m/n/10 https://www.digikey.de/en/articles/optimizing-
+ []
+
+
+Overfull \vbox (82.27892pt too high) has occurred while \output is active []
+
+ [2 </home/chris/Desktop/MPS/Projekt_Doku/Bilder/PCB_Querschnitt.png> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/BLDCMotor.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
+ (/home/chris/Desktop/MPS/Projekt_Doku/Vorlage.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
+Package rerunfilecheck Info: File `Vorlage.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 297.
  ) 
 Here is how much of TeX's memory you used:
- 11363 strings out of 483130
- 188642 string characters out of 5963882
- 585170 words of memory out of 5000000
- 26122 multiletter control sequences out of 15000+600000
- 587807 words of font info for 76 fonts, out of 8000000 for 9000
+ 11433 strings out of 483130
+ 189380 string characters out of 5963882
+ 604563 words of memory out of 5000000
+ 26188 multiletter control sequences out of 15000+600000
+ 581613 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 45i,7n,56p,10180b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on /home/chris/Desktop/MPS/Vorlage/Antriebstechnik_Auswertung.pdf (6 pages, 684032 bytes).
+ 45i,6n,56p,10166b,571s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on /home/chris/Desktop/MPS/Projekt_Doku/Vorlage.pdf (3 pages, 2678726 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 107 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 33 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
