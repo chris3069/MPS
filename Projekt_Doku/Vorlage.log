@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.13)  22 DEC 2021 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.13)  22 DEC 2021 19:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -648,7 +648,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count298
 \l__pdf_internal_box=\box95
-) (/home/chris/Desktop/MPS/Projekt_Doku/Vorlage.aux)
+) (/home/chris/Desktop/MPS/Projekt_Doku/Vorlage.aux
+
+LaTeX Warning: Label `Vorlesung Aussteuerung' multiply defined.
+
+
+LaTeX Warning: Label `formel' multiply defined.
+
+)
 \openout1 = `Vorlage.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -796,139 +803,170 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 37
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 62.
+<Bilder/Wärmestrom.png, id=5, 676.5275pt x 609.27625pt>
+File: Bilder/Wärmestrom.png Graphic file (type png)
+<use Bilder/Wärmestrom.png>
+Package pdftex.def Info: Bilder/Wärmestrom.png  used on input line 66.
+(pdftex.def)             Requested size: 236.84843pt x 213.30565pt.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 69.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 62.
+(Font)              scaled to size 9.19998pt on input line 69.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 62.
+(Font)              scaled to size 6.99199pt on input line 69.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 62.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+(Font)              scaled to size 5.51999pt on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 62.
+(Font)              scaled to size 9.19998pt on input line 69.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 62.
+(Font)              scaled to size 6.99199pt on input line 69.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 62.
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 62.
+(Font)              scaled to size 5.51999pt on input line 69.
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 69.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
-<Bilder/BLDC_Aussteuerung.png, id=5, 702.82574pt x 511.9125pt>
+<Bilder/BLDC_Aussteuerung.png, id=10, 702.82574pt x 511.9125pt>
 File: Bilder/BLDC_Aussteuerung.png Graphic file (type png)
 <use Bilder/BLDC_Aussteuerung.png>
-Package pdftex.def Info: Bilder/BLDC_Aussteuerung.png  used on input line 83.
+Package pdftex.def Info: Bilder/BLDC_Aussteuerung.png  used on input line 98.
 (pdftex.def)             Requested size: 236.84843pt x 172.50916pt.
-<Bilder/BLDC_Schematic.png, id=6, 1064.17575pt x 596.2275pt>
-File: Bilder/BLDC_Schematic.png Graphic file (type png)
-<use Bilder/BLDC_Schematic.png>
-Package pdftex.def Info: Bilder/BLDC_Schematic.png  used on input line 98.
-(pdftex.def)             Requested size: 236.84843pt x 132.69887pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/chris/Desktop/MPS/Projekt_Doku/Bilder/BLDC_Aussteuerung.png> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/BLDC_Schematic.png>]
-<Bilder/PCB_Querschnitt.png, id=30, 361.35pt x 96.36pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/chris/Desktop/MPS/Projekt_Doku/Bilder/Wärmestrom.png> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/BLDC_Aussteuerung.png>]
+<Bilder/BLDC_Schematic.png, id=33, 1064.17575pt x 596.2275pt>
+File: Bilder/BLDC_Schematic.png Graphic file (type png)
+<use Bilder/BLDC_Schematic.png>
+Package pdftex.def Info: Bilder/BLDC_Schematic.png  used on input line 113.
+(pdftex.def)             Requested size: 236.84843pt x 132.69887pt.
+<Bilder/PCB_Querschnitt.png, id=38, 361.35pt x 96.36pt>
 File: Bilder/PCB_Querschnitt.png Graphic file (type png)
 <use Bilder/PCB_Querschnitt.png>
-Package pdftex.def Info: Bilder/PCB_Querschnitt.png  used on input line 123.
+Package pdftex.def Info: Bilder/PCB_Querschnitt.png  used on input line 142.
 (pdftex.def)             Requested size: 236.84843pt x 63.15962pt.
-<Bilder/BLDCMotor.jpg, id=33, 4015.0pt x 3011.25pt>
-File: Bilder/BLDCMotor.jpg Graphic file (type jpg)
-<use Bilder/BLDCMotor.jpg>
-Package pdftex.def Info: Bilder/BLDCMotor.jpg  used on input line 149.
-(pdftex.def)             Requested size: 236.84843pt x 177.63464pt.
+<Bilder/Geometrie.png, id=41, 1255.69125pt x 461.47406pt>
+File: Bilder/Geometrie.png Graphic file (type png)
+<use Bilder/Geometrie.png>
+Package pdftex.def Info: Bilder/Geometrie.png  used on input line 149.
+(pdftex.def)             Requested size: 236.84843pt x 87.04019pt.
+ [2 </home/chris/Desktop/MPS/Projekt_Doku/Bilder/BLDC_Schematic.png> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/PCB_Querschnitt.png> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/Geometrie.png (PNG copy)>]
+<Bilder/Schaltplan.png, id=68, 1227.58624pt x 653.44125pt>
+File: Bilder/Schaltplan.png Graphic file (type png)
+<use Bilder/Schaltplan.png>
+Package pdftex.def Info: Bilder/Schaltplan.png  used on input line 225.
+(pdftex.def)             Requested size: 236.84843pt x 126.06949pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--243
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+[]\T1/futs/m/n/10 Wuerth Elek-tro-nik ei-Sos [on-li-ne], [Zu-griff am
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+\T1/futs/m/n/10 22.12.2021] Ver-fueg-bar un-ter: https://www.we-
+ []
+
+
+Overfull \hbox (149.87106pt too wide) in paragraph at lines 261--262
+\T1/futs/m/n/10 online.com/web/en/index.php/show/media/04_leiterplatte/2011_2/relaunch/produkte-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
 []\T1/futs/m/n/10 TDK-Lambda Ger-ma-ny GmbH [on-li-ne],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--243
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
 \T1/futs/m/n/10 [Zu-griff am 22.12.2021] Ver-fueg-bar un-ter:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--243
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
 \T1/futs/m/n/10 https://www.emea.lambda.tdk.com/de/KB/Was-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--243
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
 \T1/futs/m/n/10 Sie-�ber-die-Lebensdauer-von-Stromversorgungen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 []\T1/futs/m/n/10 Steven Kee-ping: An In-tro-duc-ti-on to Brus-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 \T1/futs/m/n/10 hless DC Mo-tor Con-trol, Digi-Key Elec-tro-nics,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 \T1/futs/m/n/10 https://www.digikey.de/de/articles/an-introduction-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 []\T1/futs/m/n/10 Cree, Inc. Op-ti-mi-zing PCB Ther-mal Per-for-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 \T1/futs/m/n/10 man-ce for Cree XLamp LEDs 22.12.2010,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 \T1/futs/m/n/10 [Zu-griff am 22.12.2021] Ver-fueg-bar un-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 \T1/futs/m/n/10 https://www.digikey.de/en/articles/optimizing-
  []
 
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 294.
+[3pdfTeX warning (ext4): destination with the same identifier (name{cite.Vorlesung\040Aussteuerung}) has been already used, duplicate ignored
 
-Overfull \vbox (82.27892pt too high) has occurred while \output is active []
-
- [2 </home/chris/Desktop/MPS/Projekt_Doku/Bilder/PCB_Querschnitt.png> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/BLDCMotor.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.294 \end{document}
+                     </home/chris/Desktop/MPS/Projekt_Doku/Bilder/Schaltplan.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 294.
  (/home/chris/Desktop/MPS/Projekt_Doku/Vorlage.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 294.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 294.
 Package rerunfilecheck Info: File `Vorlage.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 297.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 294.
  ) 
 Here is how much of TeX's memory you used:
- 11433 strings out of 483130
- 189380 string characters out of 5963882
- 604563 words of memory out of 5000000
- 26188 multiletter control sequences out of 15000+600000
- 581613 words of font info for 77 fonts, out of 8000000 for 9000
+ 11464 strings out of 483130
+ 189903 string characters out of 5963882
+ 607563 words of memory out of 5000000
+ 26205 multiletter control sequences out of 15000+600000
+ 582989 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 45i,6n,56p,10166b,571s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on /home/chris/Desktop/MPS/Projekt_Doku/Vorlage.pdf (3 pages, 2678726 bytes).
+ 45i,6n,56p,10166b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on /home/chris/Desktop/MPS/Projekt_Doku/Vorlage.pdf (3 pages, 792504 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 33 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
