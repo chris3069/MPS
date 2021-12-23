@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.13)  23 DEC 2021 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.13)  23 DEC 2021 21:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -648,17 +648,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count298
 \l__pdf_internal_box=\box95
-) (/home/chris/Desktop/MPS/Projekt_Doku/Vorlage.aux
-
-LaTeX Warning: Label `formel' multiply defined.
-
-
-LaTeX Warning: Label `voltage' multiply defined.
-
-
-LaTeX Warning: Label `voltage' multiply defined.
-
-)
+) (/home/chris/Desktop/MPS/Projekt_Doku/Vorlage.aux)
 \openout1 = `Vorlage.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -839,156 +829,191 @@ LaTeX Font Info:    Trying to load font information for TS1+futs on input line 6
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 127--129
+<Bilder/BLDC_Aussteuerung.png, id=10, 702.82574pt x 511.9125pt>
+File: Bilder/BLDC_Aussteuerung.png Graphic file (type png)
+<use Bilder/BLDC_Aussteuerung.png>
+Package pdftex.def Info: Bilder/BLDC_Aussteuerung.png  used on input line 99.
+(pdftex.def)             Requested size: 236.84843pt x 172.50916pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
-<Bilder/PCB_Querschnitt.png, id=12, 361.35pt x 96.36pt>
-File: Bilder/PCB_Querschnitt.png Graphic file (type png)
-<use Bilder/PCB_Querschnitt.png>
-Package pdftex.def Info: Bilder/PCB_Querschnitt.png  used on input line 137.
-(pdftex.def)             Requested size: 236.84843pt x 63.15962pt.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/chris/Desktop/MPS/Projekt_Doku/Bilder/W√§rmestrom.png> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/PCB_Querschnitt.png>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/chris/Desktop/MPS/Projekt_Doku/Bilder/W√§rmestrom.png> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/BLDC_Aussteuerung.png>]
+<Bilder/PCB_Querschnitt.png, id=38, 361.35pt x 96.36pt>
+File: Bilder/PCB_Querschnitt.png Graphic file (type png)
+<use Bilder/PCB_Querschnitt.png>
+Package pdftex.def Info: Bilder/PCB_Querschnitt.png  used on input line 154.
+(pdftex.def)             Requested size: 236.84843pt x 63.15962pt.
 <Bilder/Geometrie.png, id=42, 1255.69125pt x 461.47406pt>
 File: Bilder/Geometrie.png Graphic file (type png)
 <use Bilder/Geometrie.png>
-Package pdftex.def Info: Bilder/Geometrie.png  used on input line 164.
+Package pdftex.def Info: Bilder/Geometrie.png  used on input line 181.
 (pdftex.def)             Requested size: 236.84843pt x 87.04019pt.
 
-Underfull \hbox (badness 5726) in paragraph at lines 170--177
-\T1/futs/m/n/10 Die zu sim-mu-lie-ren-de Lei-ter-bahn-l‰n-ge be-tragt $\FML/futmi/m/it/10 l \FMS/futm/m/n/10 Å
- []
 
-<Bilder/Schaltplan.png, id=43, 1902.10625pt x 743.77875pt>
+LaTeX Warning: Command \" invalid in math mode on input line 257.
+
+[2 </home/chris/Desktop/MPS/Projekt_Doku/Bilder/PCB_Querschnitt.png> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/Geometrie.png (PNG copy)>]
+<Bilder/Schaltplan.png, id=73, 1902.10625pt x 743.77875pt>
 File: Bilder/Schaltplan.png Graphic file (type png)
 <use Bilder/Schaltplan.png>
-Package pdftex.def Info: Bilder/Schaltplan.png  used on input line 255.
+Package pdftex.def Info: Bilder/Schaltplan.png  used on input line 288.
 (pdftex.def)             Requested size: 236.84843pt x 92.60893pt.
-[2 </home/chris/Desktop/MPS/Projekt_Doku/Bilder/Geometrie.png (PNG copy)> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/Schaltplan.png>]
-<Bilder/net.png, id=67, 1255.69125pt x 461.47406pt>
+<Bilder/net.png, id=75, 1255.69125pt x 461.47406pt>
 File: Bilder/net.png Graphic file (type png)
 <use Bilder/net.png>
-Package pdftex.def Info: Bilder/net.png  used on input line 287.
+Package pdftex.def Info: Bilder/net.png  used on input line 366.
 (pdftex.def)             Requested size: 236.84843pt x 87.04019pt.
-<Bilder/voltage.png, id=68, 1340.00626pt x 508.14844pt>
+<Bilder/voltage.png, id=77, 1340.00626pt x 508.14844pt>
 File: Bilder/voltage.png Graphic file (type png)
 <use Bilder/voltage.png>
-Package pdftex.def Info: Bilder/voltage.png  used on input line 295.
+Package pdftex.def Info: Bilder/voltage.png  used on input line 378.
 (pdftex.def)             Requested size: 236.84843pt x 89.81122pt.
-<Bilder/Thermal_static.png, id=69, 1255.69125pt x 461.47406pt>
+<Bilder/Thermal_static.png, id=78, 1255.69125pt x 461.47406pt>
 File: Bilder/Thermal_static.png Graphic file (type png)
 <use Bilder/Thermal_static.png>
-Package pdftex.def Info: Bilder/Thermal_static.png  used on input line 302.
+Package pdftex.def Info: Bilder/Thermal_static.png  used on input line 387.
 (pdftex.def)             Requested size: 236.84843pt x 87.04019pt.
-<Bilder/time_dep.png, id=70, 1255.69125pt x 461.47406pt>
+ [3 </home/chris/Desktop/MPS/Projekt_Doku/Bilder/Schaltplan.png> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/net.png (PNG copy)> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/voltage.png (PNG copy)> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/Thermal_static.png (PNG copy)>]
+<Bilder/schnitt.png, id=98, 1124.70187pt x 461.47406pt>
+File: Bilder/schnitt.png Graphic file (type png)
+<use Bilder/schnitt.png>
+Package pdftex.def Info: Bilder/schnitt.png  used on input line 403.
+(pdftex.def)             Requested size: 236.84843pt x 97.17998pt.
+<Bilder/time_dep.png, id=100, 1124.70187pt x 461.47406pt>
 File: Bilder/time_dep.png Graphic file (type png)
 <use Bilder/time_dep.png>
-Package pdftex.def Info: Bilder/time_dep.png  used on input line 309.
-(pdftex.def)             Requested size: 236.84843pt x 87.04019pt.
+Package pdftex.def Info: Bilder/time_dep.png  used on input line 414.
+(pdftex.def)             Requested size: 236.84843pt x 97.17998pt.
+<Bilder/trans_thermal.png, id=102, 1708.3825pt x 697.60625pt>
+File: Bilder/trans_thermal.png Graphic file (type png)
+<use Bilder/trans_thermal.png>
+Package pdftex.def Info: Bilder/trans_thermal.png  used on input line 429.
+(pdftex.def)             Requested size: 236.84843pt x 96.70619pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--330
+Underfull \hbox (badness 10000) in paragraph at lines 430--430
+[][][]\T1/futs/m/n/10 Ersatzschaltplan: Ther-mo-dy-nam-si-ches
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--456
 []\T1/futs/m/n/10 Wuerth Elek-tro-nik ei-Sos [on-li-ne], [Zu-griff am
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--330
+Underfull \hbox (badness 10000) in paragraph at lines 452--456
 \T1/futs/m/n/10 22.12.2021] Ver-fueg-bar un-ter: https://www.we-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--330
+Underfull \hbox (badness 10000) in paragraph at lines 452--456
 \T1/futs/m/n/10 online.com/web/en/index.php/show/media/04
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--330
+Underfull \hbox (badness 10000) in paragraph at lines 452--456
 \T1/futs/m/n/10 _lei-ter-plat-te/2011_2/ relaunch/produkte-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--337
+Underfull \hbox (badness 10000) in paragraph at lines 461--463
 []\T1/futs/m/n/10 TDK-Lambda Ger-ma-ny GmbH [on-li-ne],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--337
+Underfull \hbox (badness 10000) in paragraph at lines 461--463
 \T1/futs/m/n/10 [Zu-griff am 22.12.2021] Ver-fueg-bar un-ter:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--337
+Underfull \hbox (badness 10000) in paragraph at lines 461--463
 \T1/futs/m/n/10 https://www.emea.lambda.tdk.com/de/KB/Was-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--337
+Underfull \hbox (badness 10000) in paragraph at lines 461--463
 \T1/futs/m/n/10 Sie-¸ber-die-Lebensdauer-von-Stromversorgungen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--344
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
 []\T1/futs/m/n/10 Texas In-stru-ments, 01.04.2013, Zu-griff
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--344
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
 \T1/futs/m/n/10 am 22.12.2021] Ver-fueg-bar un-ter: htt-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--344
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
 \T1/futs/m/n/10 MAL%20DESIGN%20BY%20INSIGHT%20NOT%
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
 []\T1/futs/m/n/10 Cree, Inc. Op-ti-mi-zing PCB Ther-mal Per-for-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
 \T1/futs/m/n/10 man-ce for Cree XLamp LEDs 22.12.2010,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
 \T1/futs/m/n/10 [Zu-griff am 22.12.2021] Ver-fueg-bar un-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
 \T1/futs/m/n/10 https://www.digikey.de/en/articles/optimizing-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 364.
-[3 </home/chris/Desktop/MPS/Projekt_Doku/Bilder/net.png (PNG copy)> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/voltage.png (PNG copy)> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/Thermal_static.png (PNG copy)> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/time_dep.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--483
+[]\T1/futs/m/n/10 Infineon Tech-no-lo-gies AG, 11.07.2000, Zu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--483
+\T1/futs/m/n/10 griff am 22.12.2021] Ver-fueg-bar un-ter: htt-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--483
+\T1/futs/m/n/10 ps://www.infineon.com/dgdl/smdpack.pdf?fileId=
+ []
+
+
+Overfull \vbox (0.46379pt too high) has occurred while \output is active []
+
+ [4 </home/chris/Desktop/MPS/Projekt_Doku/Bilder/schnitt.png (PNG copy)> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/time_dep.png (PNG copy)> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/trans_thermal.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 490.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 490.
  (/home/chris/Desktop/MPS/Projekt_Doku/Vorlage.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 364.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 364.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 490.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 490.
 Package rerunfilecheck Info: File `Vorlage.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 364.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 490.
  ) 
 Here is how much of TeX's memory you used:
- 11465 strings out of 483130
- 189466 string characters out of 5963882
- 592563 words of memory out of 5000000
- 26205 multiletter control sequences out of 15000+600000
+ 11517 strings out of 483130
+ 190329 string characters out of 5963882
+ 603563 words of memory out of 5000000
+ 26238 multiletter control sequences out of 15000+600000
  582989 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 45i,6n,56p,10166b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,6n,56p,10166b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on /home/chris/Desktop/MPS/Projekt_Doku/Vorlage.pdf (3 pages, 1087701 bytes).
+Output written on /home/chris/Desktop/MPS/Projekt_Doku/Vorlage.pdf (4 pages, 1288561 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 209 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -34,7 +34,7 @@
 
 \begin{document}
 
-\section*{Praktische Anwendung einer elektrischen und thermischen Simulation einer Platine zur Ansteuerung eines BLDC-Motors}
+\section*{Praktische Anwendung einer elektrischen und thermischen Simulation einer Platine zur Ansteuerung einer Leistungselektronik}
 \section*{Christian Schmid}
 Hochschule Augsburg, Fakultät für Elektrotechnik, Augsburg, Deutschland, Christian.Schmid1@Hs-Augsburg.de 
 
@@ -73,7 +73,7 @@ Bauteile werden vom Hersteller im Temperaturbereich getestet.
 Aus den Messdaten wird der zu erwartende Lebenszyklus ermittelt.  
 Bei überschreiten der Temperatur kann die Lebenszeit der Bauteile rapide abnehmen. 
 Besonders gefährdet sind Elektrolyt Kondensatoren. 
-Die maximale Temperatur beträgt meist $ 105 \degree C $. \newline 
+Meist beträgt die maximale Temperatur $ 105 \degree C $. \newline 
 % Die Lebensdauer der Bauteile halbiert sich jeweils  bei Erhöhung der Betriebstemperatur um jeweils $ 10K $ \cite{Elko}.
 Bei Erhöhung der Betriebstemperatur um jeweils $ 10K $ halbiert sich die Lebensdauer der Bauteile \cite{Elko}.
 \newline
@@ -86,6 +86,24 @@ Der Strom geht quadratisch in die Leistungsformel ein, siehe Formel \ref*{Leistu
 	P_{elektrisch} = P_{Thermisch} =  I^2 \cdot R_{Leiter} 
 	\label{Leistung_Strom}
 \end{equation}
+
+\subsection{Leistungselektronik}
+% Der Brushless DC Motor ist eine Synchronmaschine. 
+% Eine Synchronmaschine braucht 3 zueinander versetzte Phasen mit Spannungen, die einen sinus darstellen.
+In der Leistungselektronik wird getaktet an- und abgeschaltet. 
+Die Schaltfrequenz ist 100 - 10.000 so groß wie die gewollte Funktion. 
+Die Schaltfrequenz ist zu groß für das System. 
+Dies wird bei der Ansteuerung von Motoren verwendet, vgl. Abbildung \ref*{Aussteuerung})
+\begin{Figure}
+	% \resizebox{0.1\columnwidth}{!} 
+	\includegraphics[width=\textwidth]{Bilder/BLDC_Aussteuerung.png}
+	\captionof{figure}{Aussteuerung einer Phase eines Motors, \cite{Vorlesung Aussteuerung}}
+	\label{Aussteuerung}
+\end{Figure}
+\noindent
+Da sich der eingestellte Strom sehr schnell verändert und das System sich nur langsamer ändert 
+kann davon ausgegangen werden, dass in den Leitungen ein konstanter Strom fließt. 
+
 % \subsection{BLDC-Motor Aussteuerung}
 % Der Brushless DC Motor ist eine Synchronmaschine. 
 % Eine Synchronmaschine braucht 3 zueinander versetzte Phasen mit Spannungen, die einen sinus darstellen.
@@ -124,14 +142,13 @@ Der Strom geht quadratisch in die Leistungsformel ein, siehe Formel \ref*{Leistu
 % Es wird angenommen dass bei maximalem Drehmoment ein Strangstrom von bis zu $I_{Strang} = 5 A $  fließt. 
 
 \section{Thermisches Design}
-Abhängig von dem eingestellten Strom gibt es in der Industrie Vorgaben, 
-wie breit Leiterbahnen sein sollen. \newline
-
-\subsection{Aufbau einer Platine}
+Industriestandards geben Leiterbahnbreiten abhängig von Strombelastungen an \cite{ipc}.
+\newline
+\subsection{Platinenaufbau}
 Der Aufbau einer 2 lagigen Platine ist in Abbildung \ref*{pcb_im} dargestellt. 
 \newline
 Die mittlere Schicht der Platine besteht aus FR4, einem $ 1,5mm $ breiten Dielektrikum \cite{PCB_Querschnitt}. 
-Die Leiterbahnenhöhe auf Ober- und Unterseite betragen $ 35 \mu m$ \cite{aisler}.
+Die Leiterbahnenhöhe auf Ober- und Unterseite betragen jeweils $ 35 \mu m$ \cite{aisler}.
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
 	\includegraphics[width=\textwidth]{Bilder/PCB_Querschnitt.png}
@@ -166,12 +183,18 @@ Die Abmaße der zu simulierende Platine sind in Abbildung \ref*{geometry} ersich
 	\label{geometry}
 \end{Figure}
 
-\subsection{Wärmestrom}
+
+\section{Händische Rechnung}
+\subsection{Vorbedinungen}
 Der Wärmestrom wird durch den elektrischen Strom der Leiterbahn und den Widerstand des Leiters bestimmt. 
 \newline
-Die elektrische Leitfähigkeit von Kupfer betragt $ \rho_{Cu} = \frac{58.1\cdot 10^6}{Sm^{-1}} $.
+Die elektrische Leitfähigkeit von Kupfer betragt 
 \newline
-Die zu simmulierende Leiterbahnlänge betragt $l = 15 mm$.
+$ \rho_{Cu} = \frac{58.1\cdot 10^6}{Sm^{-1}} $.
+\newline
+Die zu simmulierende Leiterbahnlänge betragt
+\newline
+ $l = 15 mm$.
 \newline
 Die Querschnittsfläche der Leiterbahn betragt: 
 \begin{equation}
@@ -185,17 +208,14 @@ Der Widerstand der Leiterbahn betragt:
 Der elektrische Schaltplan ist in Abbldung \ref*{Schaltplan} ersichtlich.  \newline
 Es stellt sich eine Spannung über dem Widerstand ein, vgl. Formel \ref*{Spannung}. 
 \begin{equation}
-	U_{Verlust} =  I_{Strang} \cdot R_{Leiter} 
+	U_{Verlust} =  I_{Strang} \cdot R_{Leiter}
 	\label{Spannung}
 \end{equation}
 \noindent
-Die elektrische Verlustleistung wird mit Formel \ref*{Verlustleistung} berechnet: 
-\begin{equation}
-	P_{elektrisch} = P_{Thermisch} =  I^2 \cdot R_{Leiter} 
-	\label{Verlustleistung}
-\end{equation}
+Die Verlustspannung betragt $U_{Verlust} = 5A \cdot 1,84 \cdot 10^{-3} \Omega = 9.2 mV$. 
+Die elektrische Verlustleistung wird mit Formel \ref*{Leistung_Strom} berechnet: 
 Es wird
-$ P_{Thermisch} = (5A)^2 \cdot 1,84 \cdot 10^{-3} \Omega = 46 \cdot 10^{-3} W $ \newline
+$ P_{Thermisch} = (5A)^2 \cdot 1,84 \cdot 10^{-3} \Omega = 46 \cdot 10^{-3} W $ 
 in das System eingeprägt.
 Die Erwärmung wird mit Formel \ref*{Erwaermung} berechnet.
 \begin{equation}
@@ -203,84 +223,143 @@ Die Erwärmung wird mit Formel \ref*{Erwaermung} berechnet.
 	\label{Erwaermung}
 \end{equation}
 
+\subsection{Berechnung }
 
-
-
-
-\section{Händische Rechnung}
-% Eine erste Näherung um die Erwärmung zu bestimmen lautet: 
-
-% \begin{equation}
-% 	\Theta_{Junction, Case} = 10 \frac{K }{W} 
-% \end{equation} 
-% Die Erwärmung beträgt anhand dieser Regel, vgl. Formel \ref*{Erwaermung}: 
-
-% \noindent
-% $\Delta T = 46 \cdot 10^{-3} W \cdot 10 \frac{K }{W} = 0.46 K  $ 
-% Die Platine erwärmt sich nach der Formel um $ 0,46 K$.
-% \newline
-% Die Formel ist sehr allgemein. Es werden keine spezifischen Daten der Platine benötigt, ausschließlich die Wärmeleistung. 
-
-% \subsection{Herleitung der Daumenregel}
 \noindent
-% Die Berechnung der Erwärmung erfolgt mit dem thermischen Widerständen $\Theta$. Es wird ein Ersatzschaltbild entworfen. 
-Der thermische Widerstand $\Theta_{Junction, Case}$  wird mittels Formel \ref*{formel} berechnet . 
+Die Berechnung der Erwärmung erfolgt mit dem thermischen Widerständen $\Theta$, vgl Formel \ref*{therm_Widerstand}.
 \begin{equation}
 	\Theta_{Junction, Ambient} = \frac{\frac{1}{h}}{A}
-	\label{formel}
+	\label{therm_Widerstand}
 \end{equation}
-Der Wärme-Transfer-Koeffizient zwischen Platine und Umgebung $\Theta_{Junction, Ambient}$ wird mit $ h = 10 \frac{W}{m^2K}$ angenommen.\newline
-Die Oberseite und Unterseite der Platine betragen: \newline
+Der Wärme-Transfer-Koeffizient zwischen Platine und Umgebung 
+wird mit $ h = 10 \frac{W}{m^2K}$ angenommen \cite{TI_Thermal} .\newline
+%  Es wird ein Ersatzschaltbild entworfen. 
+Der thermische Widerstand $\Theta_{Junction, Ambient}$  wird mittels Formel \ref*{formel} berechnet . 
+\newline
+Für den Wärmestrom wird die gesamte Oberfläche der Platine verwendet. 
+Die Fläche der Oberseite und der Unterseite der Platine betragen: \newline
 $A = 2\cdot 15mm \cdot 15mm$. 
 
 \begin{equation}
 	\Theta_{Junction, Ambient} = \frac{\frac{1}{10 \frac{W}{m^2K}}}{ 2\cdot 15mm \cdot 15mm} = 222 \frac{K}{W}
 	\label{formel}
 \end{equation}
-Die Platine erwärmt sich nach der Formel um \newline
+Die Platine erwärmt sich nach der Formel \ref{Erwaermung} um \newline
 $\Delta T = 46 \cdot 10^{-3} W \cdot 222 \frac{K }{W} = 10.2 K  $.
 
-\section{Elektrischer Schaltplan für den Wärmestrom }
-Um den Wert genauer zu bestimmen wird Ersatzschaltbild erstellt um Thermische Verläufe abzubilden.
+\subsection{Elektrischer Schaltplan für den Wärmestrom }
+Um den Wert genauer zu bestimmen wird ein Ersatzschaltbild erstellt.
 Es werden die thermischen Widerstände berechnet. 
 Das Ersatzschaltbild wird ohne thermische Kapazitäten dargestellt, da uns der statische Zustand interessiert, nicht der transiente.
 Um das System noch von Hand zu simmulieren, wird angenommen, dass der Wärmestrom nur nach oben und nach unten fließt. 
 Der thermische Widerstand wird durch Formel \ref*{thermischerWiderstand} berechnet. 
 \begin{equation}
-	\Theta =  \frac{h}{A \cdot \lambda}
+	\Theta =  \frac{höhe}{A \cdot \lambda}
 	\label{thermischerWiderstand}
 \end{equation}
-\noindent
-\begin{Figure}
-	\includegraphics[width=\textwidth]{Bilder/Schaltplan.png}
-	\captionof{figure}{Ersatzschaltbild den elektrischen Stromkreis (links) und für die statische Temperatur (rechts)}
-	\label{Schaltplan}
-\end{Figure}
-\noindent
-Die Leistung in Abbildung \ref{Schaltplan} stellt den Strom dar. Die Spannung ist die Temperaturerhöhung zur Referenztemperatur. 
-Die Platine erwärmt sich um knapp $\Delta T = 13K$
+\newline \noindent
 Die thermische Leitfähigkeit von Kupfer beträgt:  \newline 
 $\lambda_{Cu} = 360 \frac{W}{m K}$  \cite{Waermefluss} \newline
 Für den spezifischen Fall betragt der thermische Widerstand von der Leiterbahn:  \newline
 $\Theta_{Leiterbahn} = \frac{35 \mu m}{4mm \cdot 15mm \cdot 360 \frac{W}{m\cdot K}} = 1,62\cdot 10^{-3} \frac{K}{W}$
-\newline 
+\newline \noindent
 Die thermische Leitfähigkeit von FR4 beträgt: 
 \newline
  $\lambda_{FR4} = 0,3 \frac{W}{m K}$ \cite{Waermefluss} \newline
-Für den spezifischen Fall betragt der thermische Widerstand von dem Dielektrikum: \newline
-$\Theta_{FR4} = \frac{1,5 mm}{mm \cdot 15mm \cdot 0,3 \frac{W}{m\cdot K}} = 1,62\cdot 10^{-3} \frac{K}{W}$
+Für den spezifischen Fall betragt der thermische Widerstand von dem Dielektrikum: 
+\newline
+$\Theta_{FR4} = \frac{1,5 mm}{4mm \cdot 15mm \cdot 0,3 \frac{W}{m\cdot K}} = 1,62\cdot 10^{-3} \frac{K}{W}$
+\newline
 Der thermische Widerstand zwischen Leiterbahn und Ambient beträgt: 
+\newline
 $\Theta_{Leiterbahn, Ambient} = \frac{\frac{1}{10 \frac{W}{m^2K}}}{ 2\cdot 15mm \cdot 15mm - 4mm \cdot 15mm} = 256 \frac{K}{W} $
+\newline
 Der thermische Widerstand zwischen Platine ohne Leiterbahn und Ambient beträgt: 
+\newline
 $\Theta_{PCB, Ambient} = \frac{\frac{1}{10 \frac{W}{m^2K}}}{  4mm \cdot 15mm} = 1666 \frac{K}{W} $
+\newline
+Es wird eine Parallelschaltung entwickelt. 
+\newline
+Ein Teil des Wärmestroms fließt über die Leiterbahn direkt an die Umgebung. 
+\newline
+Ein anderer Teil fließt senkrecht durch die Platine und gibt dort die Wärmeenergie ab. 
+Der Schaltplan ist in Abbildung \ref*{Schaltplan} dargestellt. 
+\begin{Figure}
+	\includegraphics[width=\textwidth]{Bilder/Schaltplan.png}
+	\captionof{figure}{Schaltplan: Elektrischer Stromkreis (links) 
+	Schaltplan: Statische Temperatur (rechts)}
+	\label{Schaltplan}
+\end{Figure}
+\noindent
+Die Leistung in Abbildung \ref{Schaltplan} stellt die Stromquelle dar. 
+Die Spannung ist die Temperaturerhöhung zur Referenztemperatur. 
+Die Widerstände sind die thermischen Widerstände zwischen den Elementen. 
+\newline
+Die Platine erwärmt sich um knapp $\Delta T = 13K$
+
 
 \section{Simulation}
-Ein Strom wird an einem Ende eingeprägt. Die Masse ist am anderen Ende. 
-Die Geometrie ist in Abbildung \ref*{geometry} ersichtlich. Die Vernetzung ist in Abbildung \ref*{net}.
-Da die breiten sich deutlich voneinander unterscheiden, konnte nur eine endliche Fläche für die Platine betrachtet werden.
-Bei zu groß gewählter Fläche tritt ein Fehler auf: Einige Kanten sind zu kurz, einige Flächen sind zu schmaal beziehungsweise. 
-Auch konnte nur eine endliche Fläche untersucht werden, da sont die Rechenvorgänge zu lange zum simmulieren dauern. 
+\subsection{Allgemein}
+An einem Ende wird Strom eingeprägt. Am anderen Ende ist Masse.
+Die Geometrie ist in Abbildung \ref*{geometry} ersichtlich.
+\newline
+% \noindent
+% Mit Formel \ref*{Super_Elektro} berechnet das Simulationsprogramm die Elektrotechnik.
+% \begin{equation}
+% 	\int_{\alpha \Omega}^{} J \cdot n\,dS\ = I_O 
+% 	\label{Super_Elektro}
+% \end{equation}
+% \noindent
+% Mit Formel \ref*{Super_Insulation} berechnet das Simulationsprogramm die Wärmeisolierung.
+% \begin{equation}
+% -n \cdot q = 0
+% \label{Super_Insulation}
+% \end{equation}
+% \noindent
+Mit Formel \ref*{Super_SurfacetoAmb} berechnet das Simulationsprogramm die abgegebene Energie an die Umwelt.
+\begin{equation}
+	-n \cdot q = \epsilon \sigma (T^4_{amb} - T^4)
+	\label{Super_SurfacetoAmb}
+	\end{equation}
+	\noindent
+	Mit Formel \ref*{Super_Multi1} und \ref*{Super_Multi2} berechnet das Simulationsprogramm das Zusammenspiel der Elektrotechnik un der Thermodynamik.
 
+	\begin{equation}
+		\rho c_p u \cdot \nabla = \nabla \cdot (\kappa \nabla T)+ Q_e
+		\label{Super_Multi1}
+		\end{equation}
+
+		\begin{equation}
+			Q_e = J \cdot E
+			\label{Super_Multi2}
+			\end{equation}
+
+
+
+\subsection{Netz}
+Die Vernetzung ist in Abbildung \ref*{net} dargestellt.
+Die Breiten der beiden Geometrien unterscheiden sich deutlich. 
+\newline
+Ein Abmaß beträgt $ 15mm $. Das andere Abmaß ist $ 35 \mu m$.  
+\newline
+Wird das Netz gröber als normal eingestellt werden folgende Warnungen erzeugt: 
+\begin{quote}
+Edge is much shorter than the specified minimum element size.
+\newline
+Face is (or has a narrow region that is) much smaller than the specified minimum element size.
+\newline
+Domain has a region that is much thinner than the specified minimum element size.
+\end{quote}
+\noindent
+Das Netz muss genauer eingstellt werden damit dieser Fehler nicht mehr auftritt. 
+\newline
+Es kann nur eine endliche Fläche untersucht werden.
+Die Simulationszeiten werden groß beilange und großen Flächen.
+\newline
+Abhängig von der Netzauswahl ergibt sich kein Unterschied bei den berechneten Spannung und der Temperatur. 
+Die Netzunabhängigkeit wurde überprüft. 
+\newline
+Unabhängig ob Warnungen beim Vernetzen auftreten oder nicht unterscheiden sich die Ergebnisse nicht.
 
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
@@ -289,6 +368,10 @@ Auch konnte nur eine endliche Fläche untersucht werden, da sont die Rechenvorg�
 	\label{net}
 \end{Figure}
 
+\subsection{Spannungsverlauf}
+Die Spannung verlauft linear über die Leiterbahn. 
+Das stimmt mit dem erwartenden Ergebnis überein. 
+Die maximale Spannung betragt $ U_{Verlust} = 9,22mV $, vgl. Abbildung \ref{voltage}
 
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
@@ -297,28 +380,71 @@ Auch konnte nur eine endliche Fläche untersucht werden, da sont die Rechenvorg�
 	\label{voltage}
 \end{Figure}
 
+\subsection{Statischer Temperaturverlauf}
+
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
 	\includegraphics[width=\textwidth]{Bilder/Thermal_static.png}
 	\captionof{figure}{Thermische Endzustände}
-	\label{voltage}
+	\label{static_thermal}
 \end{Figure}
+\noindent
+Die Temperatur erhöht sich in der Simulation in der Mitte der Leiterbahn um $8,6 K$.
+Kupfer ist ein sehr guter Wärmeleiter. Er hat einen sehr geringer Widerstand. 
+\newline
+Am Rand der Leiterbahn ist die Temperatur immernoch nahezu identisch. Die Wärme verteilt sich sehr gut. 
+Das Dielektrikum hingegen hat einen großen thermischen Widerstand. 
+Die Unterseite der Platine ist bereits $1,5K$ kälter., vgl. Abbildung \ref{static_thermal}. 
+\newline
+Bereits wenige Millimeter daneben ist die Temperatur deutlich niedriger, vgl. Abbildung \ref{schnitt}.
+$8 mm$ neben der Leiterbahn steigt die Oberflächentemperatur um $5,6 K$
+\begin{Figure}
+	% \resizebox{0.1\columnwidth}{!} 
+	\includegraphics[width=\textwidth]{Bilder/schnitt.png}
+	\captionof{figure}{Detailansicht Wärmefluss auf der Platine}
+	\label{schnitt}
+\end{Figure}
+
+\subsection{Transienter Temperaturverlauf}
+In Abbildung \ref{timedep} ist der transiente Verlauf für einen Punkt im Mittelpunkt der Leiterbahn 
+$8 mm$ neben der Leiterbahn dargestellt.
 
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
 	\includegraphics[width=\textwidth]{Bilder/time_dep.png}
 	\captionof{figure}{Änderung der Temperatur mit der Zeit}
-	\label{voltage}
+	\label{timedep}
+\end{Figure}
+\noindent
+Die Simulation ist zeitabhängig für $ t < 700s $. 
+Für Zeiten $ t > 700s $ ändert sich das Ergebnis nur noch minimal. 
+Die statische Enttemperatur ist erreicht. 
+Die Kurvenform ist die einer Differentialgleichen. $ T(t) = K \cdot e^{\lambda t} $ mit
+$ \lambda  < 0$. Es ist ein stabiles System. 
+Die eingeprägte Leistung ist gleich der abgegeben Leistung. 
+Wegen der Trägheit des Systems ist auf den schmeatischen Schaltplan in Abbildung \ref{trans_thermal} zu schließen. 
+Das Einschwingverhalten von der grünen Bahn lässt auf in Reihe geschaltete $PT_1$ Glieder schließen. 
+\begin{Figure}
+	% \resizebox{0.1\columnwidth}{!} 
+	\includegraphics[width=\textwidth]{Bilder/trans_thermal.png}
+	\captionof{figure}{Ersatzschaltplan: Thermodynamsiches Verhalten \cite{infineon}}
+	\label{trans_thermal}
 \end{Figure}
 
-
-Die Temperatur erhöht sich in der Simulation um $8,6 K$. 
-Das unterschreitet die  händischen Berechnungen. Comsol verwendet andere Werte für die thermische Leitfähigkeiten.
-Die Formeln, die man händischen löst sollen den Wert überschätzen, damit noch Sicherheit enthalten ist. 
-Die händischen Formeln nehmen eine doppelt so große Fläche an auf der die Wärme abgegeben wird. 
-
-Es wird der statische Endwert der Temperatur nach 700s erreicht. Danach ist die abgegebe Leistung = der eingeprägten Leistung
-
+\section{Fazit}
+Die Leiterbahn wurde nach Industriestandard ermittelt. 
+Die Formeln, um das Problem händisch zu lösen überschätzen den tatsächlichen Wert. 
+\newline
+Die Formeln enthalten eine Sicherheit. \newline
+Auch bezieht sich die Formel auf eine 4-Fach so große Fläche als simmuliert wurde. \newline
+Die erste Formel schätzt den Wert gut und ist nur $\Delta T = 10,2K - 8,6K = 1,6 K$ von der simulierten Lösung entfernt. \newline
+Die LTSpice Simulation mit $\Delta T = 13K - 8,6K = 4,4 K$ ist weiter entfernt.  \newline
+Es wurde davon ausgegangen, dass der Wärmestrom der nicht direkt an die Umwelt abgegeben wird \newline
+immer 1,5mm durch das Dielektrikum fließt. Die Annahme scheint nicht zu stimmen. \newline
+$ \Theta_{*, Ambient} $ sind die dominierenden Faktoren in der Gleichung.  \newline
+Bei verändern dieser Wertes wird die Spice Simulation genauer.  \newline
+Comsol verwendet andere Werte für die thermische Leitfähigkeiten und müssen bei Bedarf an die echte Platine angepasst werden. \newline
+Die Bestimmung der Leiterbahnbreite nach Industriestandard kann ohne Probleme weiter empfohlen werden. 
 \noindent
 \begin{thebibliography}{9}
 
@@ -328,8 +454,8 @@ Wuerth Elektronik eiSos  [online], [Zugriff am 22.12.2021] Verfuegbar unter:
  \_leiterplatte/2011\_2/ relaunch/produkte\-5/heatsink/neu\_2011/
  TecReport\-01\-2011\-EN-S.pdf
 
-% \bibitem{Vorlesung Aussteuerung}
-% Prof. Dr. Reddig, Vorlesung Leistungselektronik
+\bibitem{Vorlesung Aussteuerung}
+Prof. Dr. Reddig, Vorlesung Leistungselektronik
 
 \bibitem{Elko}
 TDK-Lambda Germany GmbH [online], [Zugriff am 22.12.2021] Verfuegbar unter:	https://www.emea.lambda.tdk.com/de/KB/Was-Sie-über-die-Lebensdauer-von-Stromversorgungen-wissen-sollten.pdf
@@ -351,9 +477,9 @@ Cree, Inc. Optimizing PCB Thermal Performance for Cree XLamp LEDs 22.12.2010, [Z
 \bibitem{aisler}
 Aisler B. V.  [online], [Zugriff am 22.12.2021] Verfuegbar unter https://aisler.net/help/design-rules-and-specifications/specifications
 
-% \bibitem{Vorlesung Aussteuerung}
-% Prof. Dr. Reddig, Vorlesung Leistungselektronik
-
+\bibitem{infineon}
+Infineon Technologies AG, 11.07.2000, Zugriff am 22.12.2021] Verfuegbar unter: https://www.infineon.com/dgdl/smdpack.pdf?fileId=
+db3a304330f6860601311905ea1d4599
 
 
 \end{thebibliography}
