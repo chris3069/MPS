@@ -41,14 +41,21 @@ Hochschule Augsburg, Fakultät für Elektrotechnik, Augsburg, Deutschland, Chris
 
 \begin{abstract} %kann man auch ueber /subsection machen
 \noindent %einrücken verhindern
-Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilenabstand. Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilenabstand. Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilenabstand. Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilenabstand. Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilenab-stand. Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilenabstand. Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilenabstand. Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilenabstand. Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilenabstand.
+In dieser Arbeit wird die thermische Auslegung der Leiterbahnquerschnitt einer handelsüblichen gedruckten Leiterplatte(PCB) untersucht. 
+Daraus soll bestimmt werden, wie stark sich die Vorgabe aus der Indsutrie mit den von Comsol simulierten Werten unterscheidet. 
+Zur Berechnung werden Verfahren aus der Lehre und der Industrie verwendet. 
+Es wird eine Daumenregel mit einer Spice Simulation und dem Model vom Comsol verglichen und die Gründe für die 
+unterschiedlichen Temperaturen erörtert. 
 \end{abstract}
 
 \renewcommand{\abstractname}{Abstract} %aendert name Zusammenfassung in Abstract
 
 \begin{abstract}
 \noindent %einrücken verhindern
-Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilenabstand. Dies ist ein normaler Text in 10 pt Schrift-größe und 12 pt Zeilenabstand. Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilenabstand. Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilen-abstand. Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilenabstand.
+In this dissertation the thermal dimensioning  of a trace-profile on a  common Printed-Circuit-Board(PCB) is examined.
+Industrial standards will be examined and compared with the calculated and simulated results from Comsol.
+For the calcualtions standards from education and industries will be used.  
+A rule of thumb, a Spice simulation and a Comsol model will be compared and the discussed regarding different results. 
 \end{abstract}
 
 
@@ -56,9 +63,9 @@ Dies ist ein normaler Text in 10 pt Schriftgröße und 12 pt Zeilenabstand. Dies
 \section{Grundlagen}
 
 \subsection{Wärmefluss}
-Es gibt 3 Möglichkeiten 
-wie sich Wärme ausbreiten kann. Durch Strahlung, Konvektion und Konduktion \cite{Waermefluss}. 
-Alle 3 Ausbreitungsmöglichkeiten treten an der Platine auf, siehe Abbildung \ref*{l_Waermefluss}. 
+Es gibt 3 Wärmeausbreitungsmöglichkeiten.  
+Durch Konvektion und Strahlung wird die Enerige an die Umluft abgegeben.
+Durch Konduktion fließt die Wärme in die Platine und in das Gehäuse, siehe Abbildung \ref*{l_Waermefluss}.
 
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
@@ -68,19 +75,18 @@ Alle 3 Ausbreitungsmöglichkeiten treten an der Platine auf, siehe Abbildung \re
 \end{Figure}
 
 \subsection{Thermische Auslegung}
-Eletrische Komponenten haben einen Betriebstemperaturbereich. 
-Bauteile werden vom Hersteller im Temperaturbereich getestet. 
-Aus den Messdaten wird der zu erwartende Lebenszyklus ermittelt.  
-Bei überschreiten der Temperatur kann die Lebenszeit der Bauteile rapide abnehmen. 
-Besonders gefährdet sind Elektrolyt Kondensatoren. 
-Meist beträgt die maximale Temperatur $ 105 \degree C $. \newline 
-% Die Lebensdauer der Bauteile halbiert sich jeweils  bei Erhöhung der Betriebstemperatur um jeweils $ 10K $ \cite{Elko}.
+Elektrische Bauteile haben einen Betriebstemperaturbereich. 
+Bauteile werden vom Hersteller in Temperaturbereichen ausgelegt und getestet. 
+Bei überschreiten der Temperatur nimmt die Lebenszeit der Bauteile ab. 
+Besonders gefährdet sind zum Beispiel Elektrolyt Kondensatoren. 
+Meist beträgt die maximale Temperatur $ 105 \degree C $ oder weniger. \newline 
 Bei Erhöhung der Betriebstemperatur um jeweils $ 10K $ halbiert sich die Lebensdauer der Bauteile \cite{Elko}.
 \newline
-Um die Verluste und daraus entstehende Abwärme durch Selbstinduktion und elektrische Widerstände  auf der Leiterbahn gering zu halten,
-wird die Leiterbahn abhängig von der Anwendung unterschiedlich ausgelegt.
+Ziel sind geringe thermischen Verluste. 
+Die Leiterbahn wird abhängig von der Anwendung unterschiedlich ausgelegt um 
+elektrische Verluste durch Selbstinduktion und den Widerstand gering zu halten. 
 \newline
-Eine Versorungsleitung benötigt eine größere Leiterbahnfläche als eine Messleitung, da die Versorungsleitung einen höheren Strom führt. 
+Eine Versorungsleitung führt einen größeren Strom und benötigt daher einen größeren Leiterbahnquerschnitt al eine Messleitung.
 Der Strom geht quadratisch in die Leistungsformel ein, siehe Formel \ref*{Leistung_Strom}. 
 \begin{equation}
 	P_{elektrisch} = P_{Thermisch} =  I^2 \cdot R_{Leiter} 
@@ -91,9 +97,9 @@ Der Strom geht quadratisch in die Leistungsformel ein, siehe Formel \ref*{Leistu
 % Der Brushless DC Motor ist eine Synchronmaschine. 
 % Eine Synchronmaschine braucht 3 zueinander versetzte Phasen mit Spannungen, die einen sinus darstellen.
 In der Leistungselektronik wird getaktet an- und abgeschaltet. 
-Die Schaltfrequenz ist 100 - 10.000 so groß wie die gewollte Funktion. 
+Die Schaltfrequenz ist einige Dekaden größer als die NutzFrequenz. 
 Die Schaltfrequenz ist zu groß für das System. 
-Dies wird bei der Ansteuerung von Motoren verwendet, vgl. Abbildung \ref*{Aussteuerung})
+Dieses Verfahren wird bei der Ansteuerung von Motoren verwendet, vgl. Abbildung \ref*{Aussteuerung}.
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
 	\includegraphics[width=\textwidth]{Bilder/BLDC_Aussteuerung.png}
@@ -142,7 +148,7 @@ kann davon ausgegangen werden, dass in den Leitungen ein konstanter Strom fließ
 % Es wird angenommen dass bei maximalem Drehmoment ein Strangstrom von bis zu $I_{Strang} = 5 A $  fließt. 
 
 \section{Thermisches Design}
-Industriestandards geben Leiterbahnbreiten abhängig von Strombelastungen an \cite{ipc}.
+Industriestandards empfehlen Leiterbahnquerschnitte abhängig von der Strombelastung \cite{ipc}.
 \newline
 \subsection{Platinenaufbau}
 Der Aufbau einer 2 lagigen Platine ist in Abbildung \ref*{pcb_im} dargestellt. 
@@ -157,7 +163,7 @@ Die Leiterbahnenhöhe auf Ober- und Unterseite betragen jeweils $ 35 \mu m$ \cit
 \end{Figure}
 
 \noindent
-Mittels Vias kann die Wärmeenergie einfacher durch die Platine fließen. 
+Durch Vias kann die Wärmeenergie schneller durch die Platine fließen. 
 Dieser Fall wird nicht untersucht.
 % Die Wärme fließt durch das Dielektrikum und auch über die Luft. 
 
@@ -198,15 +204,15 @@ Die zu simmulierende Leiterbahnlänge betragt
 \newline
 Die Querschnittsfläche der Leiterbahn betragt: 
 \begin{equation}
-	A = b \cdot h = 4 mm \cdot 35 \mu m = 140 m^{-9}
+	A = b \cdot h = 4 mm \cdot 35 \mu m = 140 \cdot 10 ^{-9} m^2
 \end{equation}
 Der Widerstand der Leiterbahn betragt: 
 \begin{equation}
 	R_{Leiter} = \frac{1}{\rho} \cdot \frac{l}{A} = 1,84 \cdot 10^{-3} \Omega
 \end{equation}
 \noindent
-Der elektrische Schaltplan ist in Abbldung \ref*{Schaltplan} ersichtlich.  \newline
-Es stellt sich eine Spannung über dem Widerstand ein, vgl. Formel \ref*{Spannung}. 
+Der elektrische Schaltplan ist in Abbildung \ref*{Schaltplan} ersichtlich.  \newline
+Es stellt sich eine Spannung über den Widerstand ein, vgl. Formel \ref*{Spannung}. 
 \begin{equation}
 	U_{Verlust} =  I_{Strang} \cdot R_{Leiter}
 	\label{Spannung}
@@ -268,15 +274,16 @@ Die thermische Leitfähigkeit von FR4 beträgt:
  $\lambda_{FR4} = 0,3 \frac{W}{m K}$ \cite{Waermefluss} \newline
 Für den spezifischen Fall betragt der thermische Widerstand von dem Dielektrikum: 
 \newline
-$\Theta_{FR4} = \frac{1,5 mm}{4mm \cdot 15mm \cdot 0,3 \frac{W}{m\cdot K}} = 1,62\cdot 10^{-3} \frac{K}{W}$
+$\Theta_{FR4} = \frac{1,5 mm}{4mm \cdot 15mm \cdot 0,3 \frac{W}{m\cdot K}} = 83,3 \frac{K}{W}$
 \newline
 Der thermische Widerstand zwischen Leiterbahn und Ambient beträgt: 
 \newline
-$\Theta_{Leiterbahn, Ambient} = \frac{\frac{1}{10 \frac{W}{m^2K}}}{ 2\cdot 15mm \cdot 15mm - 4mm \cdot 15mm} = 256 \frac{K}{W} $
+$\Theta_{Leiterbahn, Ambient} =  \frac{\frac{1}{10 \frac{W}{m^2K}}}{  4mm \cdot 15mm} = 1666 \frac{K}{W} $
 \newline
 Der thermische Widerstand zwischen Platine ohne Leiterbahn und Ambient beträgt: 
 \newline
-$\Theta_{PCB, Ambient} = \frac{\frac{1}{10 \frac{W}{m^2K}}}{  4mm \cdot 15mm} = 1666 \frac{K}{W} $
+$\Theta_{PCB, Ambient} = \frac{\frac{1}{10 \frac{W}{m^2K}}}{ 2\cdot 15mm \cdot 15mm - 4mm \cdot 15mm} = 256 \frac{K}{W} $
+% \frac{\frac{1}{10 \frac{W}{m^2K}}}{  4mm \cdot 15mm} = 1666 \frac{K}{W} $
 \newline
 Es wird eine Parallelschaltung entwickelt. 
 \newline
@@ -295,7 +302,7 @@ Die Leistung in Abbildung \ref{Schaltplan} stellt die Stromquelle dar.
 Die Spannung ist die Temperaturerhöhung zur Referenztemperatur. 
 Die Widerstände sind die thermischen Widerstände zwischen den Elementen. 
 \newline
-Die Platine erwärmt sich um knapp $\Delta T = 13K$
+Laut Spice Model erwärmt sich die Platine um $\Delta T = 13K$
 
 
 \section{Simulation}
@@ -354,12 +361,11 @@ Domain has a region that is much thinner than the specified minimum element size
 Das Netz muss genauer eingstellt werden damit dieser Fehler nicht mehr auftritt. 
 \newline
 Es kann nur eine endliche Fläche untersucht werden.
-Die Simulationszeiten werden groß beilange und großen Flächen.
+Die Simulationszeiten verlängern sich bei und großen Flächen stark.
 \newline
-Abhängig von der Netzauswahl ergibt sich kein Unterschied bei den berechneten Spannung und der Temperatur. 
-Die Netzunabhängigkeit wurde überprüft. 
+Unabhängig ob Warnungen beim Vernetzen auftreten unterscheiden sich die Ergebnisse der berechneten Spannung und der Temperatur nicht.
 \newline
-Unabhängig ob Warnungen beim Vernetzen auftreten oder nicht unterscheiden sich die Ergebnisse nicht.
+Netzunabhängigkeit ist gegeben. 
 
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
@@ -389,15 +395,15 @@ Die maximale Spannung betragt $ U_{Verlust} = 9,22mV $, vgl. Abbildung \ref{volt
 	\label{static_thermal}
 \end{Figure}
 \noindent
-Die Temperatur erhöht sich in der Simulation in der Mitte der Leiterbahn um $8,6 K$.
+Die Temperatur erhöht sich in der Simulation in der Mitte der Leiterbahn um $6,4 K$.
 Kupfer ist ein sehr guter Wärmeleiter. Er hat einen sehr geringer Widerstand. 
 \newline
 Am Rand der Leiterbahn ist die Temperatur immernoch nahezu identisch. Die Wärme verteilt sich sehr gut. 
 Das Dielektrikum hingegen hat einen großen thermischen Widerstand. 
-Die Unterseite der Platine ist bereits $1,5K$ kälter., vgl. Abbildung \ref{static_thermal}. 
+Die Unterseite der Platine ist bereits $2K$ kälter., vgl. Abbildung \ref{static_thermal}. 
 \newline
 Bereits wenige Millimeter daneben ist die Temperatur deutlich niedriger, vgl. Abbildung \ref{schnitt}.
-$8 mm$ neben der Leiterbahn steigt die Oberflächentemperatur um $5,6 K$
+$8 mm$ neben der Leiterbahn steigt die Oberflächentemperatur um $3K$
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
 	\includegraphics[width=\textwidth]{Bilder/schnitt.png}
@@ -416,8 +422,8 @@ $8 mm$ neben der Leiterbahn dargestellt.
 	\label{timedep}
 \end{Figure}
 \noindent
-Die Simulation ist zeitabhängig für $ t < 700s $. 
-Für Zeiten $ t > 700s $ ändert sich das Ergebnis nur noch minimal. 
+Die Simulation ist zeitabhängig für $ t < 350s $. 
+Für Zeiten $ t > 350s $ ändert sich das Ergebnis nur noch minimal. 
 Die statische Enttemperatur ist erreicht. 
 Die Kurvenform ist die einer Differentialgleichen. $ T(t) = K \cdot e^{\lambda t} $ mit
 $ \lambda  < 0$. Es ist ein stabiles System. 
@@ -432,19 +438,21 @@ Das Einschwingverhalten von der grünen Bahn lässt auf in Reihe geschaltete $PT
 \end{Figure}
 
 \section{Fazit}
-Die Leiterbahn wurde nach Industriestandard ermittelt. 
+Der Leiterbahnquerschnitt wurde nach Industriestandard ermittelt. 
 Die Formeln, um das Problem händisch zu lösen überschätzen den tatsächlichen Wert. 
 \newline
-Die Formeln enthalten eine Sicherheit. \newline
-Auch bezieht sich die Formel auf eine 4-Fach so große Fläche als simmuliert wurde. \newline
-Die erste Formel schätzt den Wert gut und ist nur $\Delta T = 10,2K - 8,6K = 1,6 K$ von der simulierten Lösung entfernt. \newline
-Die LTSpice Simulation mit $\Delta T = 13K - 8,6K = 4,4 K$ ist weiter entfernt.  \newline
+Die erste Formel gilt als Daumenregel ist von der simulierten Lösung um $\Delta T = 10,2K - 6,4K = 3,8K$ entfernt. \newline
+Das $h $ in Formel \ref*{Erwaermung} bezieht sich auf eine 4-Fach so große Fläche als simmuliert wurde. Daher weicht der Wert ab. \newline
+Die Spice Simulation mit $\Delta T = 13K - 6,4K = 6,6 K$ ist weiter entfernt.  \newline
 Es wurde davon ausgegangen, dass der Wärmestrom der nicht direkt an die Umwelt abgegeben wird \newline
-immer 1,5mm durch das Dielektrikum fließt. Die Annahme scheint nicht zu stimmen. \newline
+immer 1,5mm durch das Dielektrikum fließt. Die Annahme scheint nicht zu stimmen. Auch wird das selbe  $h $ verwendet wie bei der Daumenregel. \newline
 $ \Theta_{*, Ambient} $ sind die dominierenden Faktoren in der Gleichung.  \newline
-Bei verändern dieser Wertes wird die Spice Simulation genauer.  \newline
-Comsol verwendet andere Werte für die thermische Leitfähigkeiten und müssen bei Bedarf an die echte Platine angepasst werden. \newline
-Die Bestimmung der Leiterbahnbreite nach Industriestandard kann ohne Probleme weiter empfohlen werden. 
+Auch die Simulation hat einen Fehler. 
+Die Platinen in der Industrie sind größer als die simulierte Platine.
+Mit den berechneten Werten von Comsol kann mit Regelungstechnik ein generauer Spice Model erzeugt werden.  \newline
+Die Formeln aus der Industrie enthalten Sicherheiten.
+Für die meisten Platinenlayouts sollten die Werte aus der Industrie in Ordnung sein. 
+Im allgemeinen ist der Fehler vernachlässigbar bei guter Auslegung der Platine. 
 \noindent
 \begin{thebibliography}{9}
 
