@@ -34,14 +34,14 @@
 
 \begin{document}
 
-\section*{Praktische Anwendung einer elektrischen und thermischen Simulation einer Platine zur Ansteuerung einer Leistungselektronik}
+\section*{Praktische Auslegung einer elektrischen und thermischen Simulation einer Platine zur Ansteuerung einer Leistungselektronik}
 \section*{Christian Schmid}
 Hochschule Augsburg, Fakultät für Elektrotechnik, Augsburg, Deutschland, Christian.Schmid1@Hs-Augsburg.de 
 
 
 \begin{abstract} %kann man auch ueber /subsection machen
 \noindent %einrücken verhindern
-In dieser Arbeit wird die thermische Auslegung der Leiterbahnquerschnitt einer handelsüblichen gedruckten Leiterplatte(PCB) untersucht. 
+In dieser Arbeit wird die thermische Auslegung des Leiterbahnquerschnitt einer handelsüblichen gedruckten Leiterplatte(PCB) untersucht. 
 Daraus soll bestimmt werden, wie stark sich die Vorgabe aus der Indsutrie mit den von Comsol simulierten Werten unterscheidet. 
 Zur Berechnung werden Verfahren aus der Lehre und der Industrie verwendet. 
 Es wird eine Daumenregel mit einer Spice Simulation und dem Model vom Comsol verglichen und die Gründe für die 
@@ -54,7 +54,7 @@ unterschiedlichen Temperaturen erörtert.
 \noindent %einrücken verhindern
 In this dissertation the thermal dimensioning  of a trace-profile on a  common Printed-Circuit-Board(PCB) is examined.
 Industrial standards will be examined and compared with the calculated and simulated results from Comsol.
-For the calcualtions standards from education and industries will be used.  
+Standards from education and industries will be used for the calcualtions.  
 A rule of thumb, a Spice simulation and a Comsol model will be compared and the discussed regarding different results. 
 \end{abstract}
 
@@ -65,7 +65,7 @@ A rule of thumb, a Spice simulation and a Comsol model will be compared and the 
 \subsection{Wärmefluss}
 Es gibt 3 Wärmeausbreitungsmöglichkeiten.  
 Durch Konvektion und Strahlung wird die Enerige an die Umluft abgegeben.
-Durch Konduktion fließt die Wärme in die Platine und in das Gehäuse, siehe Abbildung \ref*{l_Waermefluss}.
+Durch Konduktion fließt die Wärme durch die Platine und in das Gehäuse, siehe Abbildung \ref*{l_Waermefluss}.
 
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
@@ -75,18 +75,19 @@ Durch Konduktion fließt die Wärme in die Platine und in das Gehäuse, siehe Ab
 \end{Figure}
 
 \subsection{Thermische Auslegung}
-Elektrische Bauteile haben einen Betriebstemperaturbereich. 
-Bauteile werden vom Hersteller in Temperaturbereichen ausgelegt und getestet. 
-Bei überschreiten der Temperatur nimmt die Lebenszeit der Bauteile ab. 
+Elektrische Bauteile werden vom Hersteller im Betriebstemperaturbereich getestet und ausgelegt. 
+Bei größerer Betriebstemperatur nimmt die Lebenszeit der Bauteile ab. 
+\newline
 Besonders gefährdet sind zum Beispiel Elektrolyt Kondensatoren. 
 Meist beträgt die maximale Temperatur $ 105 \degree C $ oder weniger. \newline 
 Bei Erhöhung der Betriebstemperatur um jeweils $ 10K $ halbiert sich die Lebensdauer der Bauteile \cite{Elko}.
 \newline
 Ziel sind geringe thermischen Verluste. 
-Die Leiterbahn wird abhängig von der Anwendung unterschiedlich ausgelegt um 
-elektrische Verluste durch Selbstinduktion und den Widerstand gering zu halten. 
 \newline
-Eine Versorungsleitung führt einen größeren Strom und benötigt daher einen größeren Leiterbahnquerschnitt al eine Messleitung.
+Die Leiterbahn wird abhängig von der Anwendung unterschiedlich ausgelegt um 
+elektrische Verluste durch Selbstinduktion und Widerstand gering zu halten. 
+\newline
+Eine Versorungsleitung führt einen größeren Strom und benötigt daher einen größeren Leiterbahnquerschnitt als eine Messleitung.
 Der Strom geht quadratisch in die Leistungsformel ein, siehe Formel \ref*{Leistung_Strom}. 
 \begin{equation}
 	P_{elektrisch} = P_{Thermisch} =  I^2 \cdot R_{Leiter} 
@@ -97,9 +98,9 @@ Der Strom geht quadratisch in die Leistungsformel ein, siehe Formel \ref*{Leistu
 % Der Brushless DC Motor ist eine Synchronmaschine. 
 % Eine Synchronmaschine braucht 3 zueinander versetzte Phasen mit Spannungen, die einen sinus darstellen.
 In der Leistungselektronik wird getaktet an- und abgeschaltet. 
-Die Schaltfrequenz ist einige Dekaden größer als die NutzFrequenz. 
-Die Schaltfrequenz ist zu groß für das System. 
-Dieses Verfahren wird bei der Ansteuerung von Motoren verwendet, vgl. Abbildung \ref*{Aussteuerung}.
+Die Schaltfrequenz ist einige Dekaden größer als die Nutzfrequenz. 
+Das System ist träger als die Schaltfrequenz.
+Das Verfahren in Abbildung \ref*{Aussteuerung} wird zur Aussteuerungvon Motoren verwendet.
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
 	\includegraphics[width=\textwidth]{Bilder/BLDC_Aussteuerung.png}
@@ -107,8 +108,8 @@ Dieses Verfahren wird bei der Ansteuerung von Motoren verwendet, vgl. Abbildung 
 	\label{Aussteuerung}
 \end{Figure}
 \noindent
-Da sich der eingestellte Strom sehr schnell verändert und das System sich nur langsamer ändert 
-kann davon ausgegangen werden, dass in den Leitungen ein konstanter Strom fließt. 
+Da sich der eingestellte Strom sehr schnell ändert und das System sich nur langsamer ändert 
+kann davon ausgegangen werden dass im Mittel ein konstanter Strom fließt. 
 
 % \subsection{BLDC-Motor Aussteuerung}
 % Der Brushless DC Motor ist eine Synchronmaschine. 
@@ -175,9 +176,12 @@ Dieser Fall wird nicht untersucht.
 Die Arbeit widmet sich der Bestimmung des Thermischen Widerstands und der 
 Platinenerwärmung durch den eingestellten Strom. 
 \newline
-Für einen Strom von $I_{Strang} = 5 A $ und einer maximalen Erwärmung von $10 K$ ergibt sich nach dem Industriestandard eine
-Leiterbahnbreite von $b = 4 mm $ \cite{ipc}. \newline
-Für die Arbeit wird ein Strom von $I_{Strang} = 5 A $ und eine Leiterbahnbreite von $b = 4 mm $ untersucht.
+% Für einen Strom von $I_{Strang} = 5 A $ und einer maximalen Erwärmung von $10 K$ ergibt sich nach dem Industriestandard eine
+% Leiterbahnbreite von $b = 4 mm $ \cite{ipc}. 
+Für die Arbeit wird die Platine für einen Strom von $I_{Strang} = 5 A $ ausgelegt. 
+\newline
+Nach Industriestandard ist für eine maximale Erwärmung von $10 K$ eine Leiterbahnbreite von $b = 4 mm $ notwendig \cite{ipc}. 
+% und eine Leiterbahnbreite von $b = 4 mm $ untersucht.
 Die Platine hat die Maße $15mm x 15mm$
 Die Abmaße der zu simulierende Platine sind in Abbildung \ref*{geometry} ersichtlich.
 
@@ -240,7 +244,7 @@ Die Berechnung der Erwärmung erfolgt mit dem thermischen Widerständen $\Theta$
 Der Wärme-Transfer-Koeffizient zwischen Platine und Umgebung 
 wird mit $ h = 10 \frac{W}{m^2K}$ angenommen \cite{TI_Thermal} .\newline
 %  Es wird ein Ersatzschaltbild entworfen. 
-Der thermische Widerstand $\Theta_{Junction, Ambient}$  wird mittels Formel \ref*{formel} berechnet . 
+Der thermische Widerstand $\Theta_{Junction, Ambient}$  wird nach Formel \ref*{formel} berechnet . 
 \newline
 Für den Wärmestrom wird die gesamte Oberfläche der Platine verwendet. 
 Die Fläche der Oberseite und der Unterseite der Platine betragen: \newline
@@ -323,7 +327,7 @@ Die Geometrie ist in Abbildung \ref*{geometry} ersichtlich.
 % \label{Super_Insulation}
 % \end{equation}
 % \noindent
-Mit Formel \ref*{Super_SurfacetoAmb} berechnet das Simulationsprogramm die abgegebene Energie an die Umwelt.
+Mit Formel \ref*{Super_SurfacetoAmb} berechnet das Simulationsprogramm den Wärmefluss an die Umwelt.
 \begin{equation}
 	-n \cdot q = \epsilon \sigma (T^4_{amb} - T^4)
 	\label{Super_SurfacetoAmb}
@@ -424,7 +428,7 @@ $8 mm$ neben der Leiterbahn dargestellt.
 \noindent
 Die Simulation ist zeitabhängig für $ t < 350s $. 
 Für Zeiten $ t > 350s $ ändert sich das Ergebnis nur noch minimal. 
-Die statische Enttemperatur ist erreicht. 
+Die statische Endtemperatur ist erreicht. 
 Die Kurvenform ist die einer Differentialgleichen. $ T(t) = K \cdot e^{\lambda t} $ mit
 $ \lambda  < 0$. Es ist ein stabiles System. 
 Die eingeprägte Leistung ist gleich der abgegeben Leistung. 
@@ -449,9 +453,10 @@ immer 1,5mm durch das Dielektrikum fließt. Die Annahme scheint nicht zu stimmen
 $ \Theta_{*, Ambient} $ sind die dominierenden Faktoren in der Gleichung.  \newline
 Auch die Simulation hat einen Fehler. 
 Die Platinen in der Industrie sind größer als die simulierte Platine.
-Mit den berechneten Werten von Comsol kann mit Regelungstechnik ein generauer Spice Model erzeugt werden.  \newline
+Mit den berechneten Werten von Comsol kann mit Regelungstechnik ein genaueres Spice Model erzeugt werden.  \newline
 Die Formeln aus der Industrie enthalten Sicherheiten.
-Für die meisten Platinenlayouts sollten die Werte aus der Industrie in Ordnung sein. 
+\newline
+Für die meisten Platinenlayouts sollten die Werte aus der Industrie passen. 
 Im allgemeinen ist der Fehler vernachlässigbar bei guter Auslegung der Platine. 
 \noindent
 \begin{thebibliography}{9}

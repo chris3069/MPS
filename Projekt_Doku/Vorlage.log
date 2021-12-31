@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.13)  30 DEC 2021 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.13)  31 DEC 2021 10:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -832,15 +832,15 @@ File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 <Bilder/BLDC_Aussteuerung.png, id=9, 702.82574pt x 511.9125pt>
 File: Bilder/BLDC_Aussteuerung.png Graphic file (type png)
 <use Bilder/BLDC_Aussteuerung.png>
-Package pdftex.def Info: Bilder/BLDC_Aussteuerung.png  used on input line 105.
+Package pdftex.def Info: Bilder/BLDC_Aussteuerung.png  used on input line 106.
 (pdftex.def)             Requested size: 236.84843pt x 172.50916pt.
 
-Underfull \hbox (badness 6842) in paragraph at lines 151--153
+Underfull \hbox (badness 6842) in paragraph at lines 152--154
 \T1/futs/m/n/10 Industriestandards emp-feh-len Lei-ter-bahn-quer-schnit-te
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--153
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
@@ -850,146 +850,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--153
 <Bilder/PCB_Querschnitt.png, id=37, 361.35pt x 96.36pt>
 File: Bilder/PCB_Querschnitt.png Graphic file (type png)
 <use Bilder/PCB_Querschnitt.png>
-Package pdftex.def Info: Bilder/PCB_Querschnitt.png  used on input line 160.
+Package pdftex.def Info: Bilder/PCB_Querschnitt.png  used on input line 161.
 (pdftex.def)             Requested size: 236.84843pt x 63.15962pt.
 <Bilder/Geometrie.png, id=41, 1255.69125pt x 461.47406pt>
 File: Bilder/Geometrie.png Graphic file (type png)
 <use Bilder/Geometrie.png>
-Package pdftex.def Info: Bilder/Geometrie.png  used on input line 187.
+Package pdftex.def Info: Bilder/Geometrie.png  used on input line 191.
 (pdftex.def)             Requested size: 236.84843pt x 87.04019pt.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 263.
+LaTeX Warning: Command \" invalid in math mode on input line 267.
 
 [2 </home/chris/Desktop/MPS/Projekt_Doku/Bilder/PCB_Querschnitt.png> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/Geometrie.png (PNG copy)>]
 <Bilder/Schaltplan.png, id=72, 1902.10625pt x 743.77875pt>
 File: Bilder/Schaltplan.png Graphic file (type png)
 <use Bilder/Schaltplan.png>
-Package pdftex.def Info: Bilder/Schaltplan.png  used on input line 295.
+Package pdftex.def Info: Bilder/Schaltplan.png  used on input line 299.
 (pdftex.def)             Requested size: 236.84843pt x 92.60893pt.
 <Bilder/net.png, id=74, 1255.69125pt x 461.47406pt>
 File: Bilder/net.png Graphic file (type png)
 <use Bilder/net.png>
-Package pdftex.def Info: Bilder/net.png  used on input line 372.
+Package pdftex.def Info: Bilder/net.png  used on input line 376.
 (pdftex.def)             Requested size: 236.84843pt x 87.04019pt.
 <Bilder/voltage.png, id=76, 1145.78062pt x 461.47406pt>
 File: Bilder/voltage.png Graphic file (type png)
 <use Bilder/voltage.png>
-Package pdftex.def Info: Bilder/voltage.png  used on input line 384.
+Package pdftex.def Info: Bilder/voltage.png  used on input line 388.
 (pdftex.def)             Requested size: 236.84843pt x 95.39143pt.
 <Bilder/Thermal_static.png, id=77, 1145.78062pt x 461.47406pt>
 File: Bilder/Thermal_static.png Graphic file (type png)
 <use Bilder/Thermal_static.png>
-Package pdftex.def Info: Bilder/Thermal_static.png  used on input line 393.
+Package pdftex.def Info: Bilder/Thermal_static.png  used on input line 397.
 (pdftex.def)             Requested size: 236.84843pt x 95.39143pt.
  [3 </home/chris/Desktop/MPS/Projekt_Doku/Bilder/Schaltplan.png> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/net.png (PNG copy)> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/voltage.png (PNG copy)> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/Thermal_static.png (PNG copy)>]
 <Bilder/schnitt.png, id=97, 1145.78062pt x 461.47406pt>
 File: Bilder/schnitt.png Graphic file (type png)
 <use Bilder/schnitt.png>
-Package pdftex.def Info: Bilder/schnitt.png  used on input line 409.
+Package pdftex.def Info: Bilder/schnitt.png  used on input line 413.
 (pdftex.def)             Requested size: 236.84843pt x 95.39143pt.
 <Bilder/time_dep.png, id=99, 1145.78062pt x 461.47406pt>
 File: Bilder/time_dep.png Graphic file (type png)
 <use Bilder/time_dep.png>
-Package pdftex.def Info: Bilder/time_dep.png  used on input line 420.
+Package pdftex.def Info: Bilder/time_dep.png  used on input line 424.
 (pdftex.def)             Requested size: 236.84843pt x 95.39143pt.
 <Bilder/trans_thermal.png, id=101, 1708.3825pt x 697.60625pt>
 File: Bilder/trans_thermal.png Graphic file (type png)
 <use Bilder/trans_thermal.png>
-Package pdftex.def Info: Bilder/trans_thermal.png  used on input line 435.
+Package pdftex.def Info: Bilder/trans_thermal.png  used on input line 439.
 (pdftex.def)             Requested size: 236.84843pt x 96.70619pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--436
+Underfull \hbox (badness 10000) in paragraph at lines 440--440
 [][][]\T1/futs/m/n/10 Ersatzschaltplan: Ther-mo-dy-nam-si-ches
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--464
+Underfull \hbox (badness 10000) in paragraph at lines 465--469
 []\T1/futs/m/n/10 Wuerth Elek-tro-nik ei-Sos [on-li-ne], [Zu-griff am
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--464
+Underfull \hbox (badness 10000) in paragraph at lines 465--469
 \T1/futs/m/n/10 22.12.2021] Ver-fueg-bar un-ter: https://www.we-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--464
+Underfull \hbox (badness 10000) in paragraph at lines 465--469
 \T1/futs/m/n/10 online.com/web/en/index.php/show/media/04
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--464
+Underfull \hbox (badness 10000) in paragraph at lines 465--469
 \T1/futs/m/n/10 _lei-ter-plat-te/2011_2/ relaunch/produkte-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--471
+Underfull \hbox (badness 10000) in paragraph at lines 474--476
 []\T1/futs/m/n/10 TDK-Lambda Ger-ma-ny GmbH [on-li-ne],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--471
+Underfull \hbox (badness 10000) in paragraph at lines 474--476
 \T1/futs/m/n/10 [Zu-griff am 22.12.2021] Ver-fueg-bar un-ter:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--471
+Underfull \hbox (badness 10000) in paragraph at lines 474--476
 \T1/futs/m/n/10 https://www.emea.lambda.tdk.com/de/KB/Was-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--471
+Underfull \hbox (badness 10000) in paragraph at lines 474--476
 \T1/futs/m/n/10 Sie-über-die-Lebensdauer-von-Stromversorgungen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--478
+Underfull \hbox (badness 10000) in paragraph at lines 480--483
 []\T1/futs/m/n/10 Texas In-stru-ments, 01.04.2013, Zu-griff
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--478
+Underfull \hbox (badness 10000) in paragraph at lines 480--483
 \T1/futs/m/n/10 am 22.12.2021] Ver-fueg-bar un-ter: htt-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--478
+Underfull \hbox (badness 10000) in paragraph at lines 480--483
 \T1/futs/m/n/10 MAL%20DESIGN%20BY%20INSIGHT%20NOT%
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 []\T1/futs/m/n/10 Cree, Inc. Op-ti-mi-zing PCB Ther-mal Per-for-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 \T1/futs/m/n/10 man-ce for Cree XLamp LEDs 22.12.2010,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 \T1/futs/m/n/10 [Zu-griff am 22.12.2021] Ver-fueg-bar un-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 \T1/futs/m/n/10 https://www.digikey.de/en/articles/optimizing-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--491
+Underfull \hbox (badness 10000) in paragraph at lines 494--496
 []\T1/futs/m/n/10 Infineon Tech-no-lo-gies AG, 11.07.2000, Zu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--491
+Underfull \hbox (badness 10000) in paragraph at lines 494--496
 \T1/futs/m/n/10 griff am 22.12.2021] Ver-fueg-bar un-ter: htt-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--491
+Underfull \hbox (badness 10000) in paragraph at lines 494--496
 \T1/futs/m/n/10 ps://www.infineon.com/dgdl/smdpack.pdf?fileId=
  []
 
@@ -997,14 +997,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 489--491
 Overfull \vbox (8.8867pt too high) has occurred while \output is active []
 
  [4 </home/chris/Desktop/MPS/Projekt_Doku/Bilder/schnitt.png (PNG copy)> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/time_dep.png (PNG copy)> </home/chris/Desktop/MPS/Projekt_Doku/Bilder/trans_thermal.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 498.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 498.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 503.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 503.
  (/home/chris/Desktop/MPS/Projekt_Doku/Vorlage.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 498.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 498.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 503.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 503.
 Package rerunfilecheck Info: File `Vorlage.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 498.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 503.
  ) 
 Here is how much of TeX's memory you used:
  11517 strings out of 483130
@@ -1015,7 +1015,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  45i,6n,56p,10166b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on /home/chris/Desktop/MPS/Projekt_Doku/Vorlage.pdf (4 pages, 1253676 bytes).
+Output written on /home/chris/Desktop/MPS/Projekt_Doku/Vorlage.pdf (4 pages, 1253513 bytes).
 PDF statistics:
  208 PDF objects out of 1000 (max. 8388607)
  176 compressed objects within 2 object streams
