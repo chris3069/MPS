@@ -41,7 +41,7 @@ Hochschule Augsburg, Fakultät für Elektrotechnik, Augsburg, Deutschland, Chris
 
 \begin{abstract} %kann man auch ueber /subsection machen
 \noindent %einrücken verhindern
-In dieser Arbeit wird die thermische Auslegung des Leiterbahnquerschnitt einer handelsüblichen gedruckten Leiterplatte(PCB) untersucht. 
+In dieser Arbeit wird die thermische Auslegung des Leiterbahnquerschnitt einer handelsüblichen gedruckten Leiterplatine(PCB) untersucht. 
 Daraus soll bestimmt werden, wie stark sich die Vorgabe aus der Indsutrie mit den von Comsol simulierten Werten unterscheidet. 
 Zur Berechnung werden Verfahren aus der Lehre und der Industrie verwendet. 
 Es wird eine Daumenregel mit einer Spice Simulation und dem Model vom Comsol verglichen und die Gründe für die 
@@ -82,7 +82,7 @@ Besonders gefährdet sind zum Beispiel Elektrolyt Kondensatoren.
 Meist beträgt die maximale Temperatur $ 105 \degree C $ oder weniger. \newline 
 Bei Erhöhung der Betriebstemperatur um jeweils $ 10K $ halbiert sich die Lebensdauer der Bauteile \cite{Elko}.
 \newline
-Ziel sind geringe thermischen Verluste. 
+Ziel sind niedrige Temperaturen durch geringe thermischen Verluste. 
 \newline
 Die Leiterbahn wird abhängig von der Anwendung unterschiedlich ausgelegt um 
 elektrische Verluste durch Selbstinduktion und Widerstand gering zu halten. 
@@ -180,9 +180,9 @@ Platinenerwärmung durch den eingestellten Strom.
 % Leiterbahnbreite von $b = 4 mm $ \cite{ipc}. 
 Für die Arbeit wird die Platine für einen Strom von $I_{Strang} = 5 A $ ausgelegt. 
 \newline
-Nach Industriestandard ist für eine maximale Erwärmung von $10 K$ eine Leiterbahnbreite von $b = 4 mm $ notwendig \cite{ipc}. 
+Nach Industriestandard ist für eine maximale Erwärmung von $10 K$ eine Leiterbahnbreite von $b = 4 mm $ notwendig\cite{ipc}. 
 % und eine Leiterbahnbreite von $b = 4 mm $ untersucht.
-Die Platine hat die Maße $15mm x 15mm$
+Die Platine hat die Maße $15mm x 25mm$
 Die Abmaße der zu simulierende Platine sind in Abbildung \ref*{geometry} ersichtlich.
 
 
@@ -200,7 +200,7 @@ Der Wärmestrom wird durch den elektrischen Strom der Leiterbahn und den Widerst
 \newline
 Die elektrische Leitfähigkeit von Kupfer betragt 
 \newline
-$ \rho_{Cu} = \frac{58.1\cdot 10^6}{Sm^{-1}} $.
+$ \rho_{Cu} = \frac{58.1\cdot 10^6}{S \cdot m^{-1}} $ \cite{Waermefluss}.
 \newline
 Die zu simmulierende Leiterbahnlänge betragt
 \newline
@@ -248,14 +248,14 @@ Der thermische Widerstand $\Theta_{Junction, Ambient}$  wird nach Formel \ref*{f
 \newline
 Für den Wärmestrom wird die gesamte Oberfläche der Platine verwendet. 
 Die Fläche der Oberseite und der Unterseite der Platine betragen: \newline
-$A = 2\cdot 15mm \cdot 15mm$. 
+$A = 2\cdot 15mm \cdot 25mm$. 
 
 \begin{equation}
-	\Theta_{Junction, Ambient} = \frac{\frac{1}{10 \frac{W}{m^2K}}}{ 2\cdot 15mm \cdot 15mm} = 222 \frac{K}{W}
+	\Theta_{Junction, Ambient} = \frac{\frac{1}{10 \frac{W}{m^2K}}}{ 2\cdot 15mm \cdot 25mm} = 133 \frac{K}{W}
 	\label{formel}
 \end{equation}
 Die Platine erwärmt sich nach der Formel \ref{Erwaermung} um \newline
-$\Delta T = 46 \cdot 10^{-3} W \cdot 222 \frac{K }{W} = 10.2 K  $.
+$\Delta T = 46 \cdot 10^{-3} W \cdot 133 \frac{K }{W} = 6,1 K  $.
 
 \subsection{Elektrischer Schaltplan für den Wärmestrom }
 Um den Wert genauer zu bestimmen wird ein Ersatzschaltbild erstellt.
@@ -264,7 +264,7 @@ Das Ersatzschaltbild wird ohne thermische Kapazitäten dargestellt, da uns der s
 Um das System noch von Hand zu simmulieren, wird angenommen, dass der Wärmestrom nur nach oben und nach unten fließt. 
 Der thermische Widerstand wird durch Formel \ref*{thermischerWiderstand} berechnet. 
 \begin{equation}
-	\Theta =  \frac{höhe}{A \cdot \lambda}
+	\Theta =  \frac{Höhe}{A \cdot \lambda}
 	\label{thermischerWiderstand}
 \end{equation}
 \newline \noindent
@@ -286,7 +286,7 @@ $\Theta_{Leiterbahn, Ambient} =  \frac{\frac{1}{10 \frac{W}{m^2K}}}{  4mm \cdot 
 \newline
 Der thermische Widerstand zwischen Platine ohne Leiterbahn und Ambient beträgt: 
 \newline
-$\Theta_{PCB, Ambient} = \frac{\frac{1}{10 \frac{W}{m^2K}}}{ 2\cdot 15mm \cdot 15mm - 4mm \cdot 15mm} = 256 \frac{K}{W} $
+$\Theta_{PCB, Ambient} = \frac{\frac{1}{10 \frac{W}{m^2K}}}{ 2\cdot 25mm \cdot 15mm - 4mm \cdot 15mm} = 134 \frac{K}{W} $
 % \frac{\frac{1}{10 \frac{W}{m^2K}}}{  4mm \cdot 15mm} = 1666 \frac{K}{W} $
 \newline
 Es wird eine Parallelschaltung entwickelt. 
@@ -306,10 +306,11 @@ Die Leistung in Abbildung \ref{Schaltplan} stellt die Stromquelle dar.
 Die Spannung ist die Temperaturerhöhung zur Referenztemperatur. 
 Die Widerstände sind die thermischen Widerstände zwischen den Elementen. 
 \newline
-Laut Spice Model erwärmt sich die Platine um $\Delta T = 13K$
+Laut Spice Model erwärmt sich die Platine um $\Delta T = 8,8K$
 
 
 \section{Simulation}
+Die berechneten Werte werden in Comsol überprüft.
 \subsection{Allgemein}
 An einem Ende wird Strom eingeprägt. Am anderen Ende ist Masse.
 Die Geometrie ist in Abbildung \ref*{geometry} ersichtlich.
@@ -369,7 +370,7 @@ Die Simulationszeiten verlängern sich bei und großen Flächen stark.
 \newline
 Unabhängig ob Warnungen beim Vernetzen auftreten unterscheiden sich die Ergebnisse der berechneten Spannung und der Temperatur nicht.
 \newline
-Netzunabhängigkeit ist gegeben. 
+Die Netzunabhängigkeit wurde überprüft und ist gegeben. 
 
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
@@ -381,7 +382,7 @@ Netzunabhängigkeit ist gegeben.
 \subsection{Spannungsverlauf}
 Die Spannung verlauft linear über die Leiterbahn. 
 Das stimmt mit dem erwartenden Ergebnis überein. 
-Die maximale Spannung betragt $ U_{Verlust} = 9,22mV $, vgl. Abbildung \ref{voltage}
+Die maximale Spannung betragt $ U_{Verlust} = 9,22mV$, vgl. Abbildung \ref{voltage}.
 
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
@@ -432,7 +433,7 @@ Die statische Endtemperatur ist erreicht.
 Die Kurvenform ist die einer Differentialgleichen. $ T(t) = K \cdot e^{\lambda t} $ mit
 $ \lambda  < 0$. Es ist ein stabiles System. 
 Die eingeprägte Leistung ist gleich der abgegeben Leistung. 
-Wegen der Trägheit des Systems ist auf den schmeatischen Schaltplan in Abbildung \ref{trans_thermal} zu schließen. 
+Wegen der Trägheit des Systems ist auf den schematischen Schaltplan in Abbildung \ref{trans_thermal} zu schließen. 
 Das Einschwingverhalten von der grünen Bahn lässt auf in Reihe geschaltete $PT_1$ Glieder schließen. 
 \begin{Figure}
 	% \resizebox{0.1\columnwidth}{!} 
@@ -442,22 +443,23 @@ Das Einschwingverhalten von der grünen Bahn lässt auf in Reihe geschaltete $PT
 \end{Figure}
 
 \section{Fazit}
-Der Leiterbahnquerschnitt wurde nach Industriestandard ermittelt. 
-Die Formeln, um das Problem händisch zu lösen überschätzen den tatsächlichen Wert. 
+Der Leiterbahnquerschnitt wurde nach geltendem Industriestandard ermittelt. 
 \newline
-Die erste Formel gilt als Daumenregel ist von der simulierten Lösung um $\Delta T = 10,2K - 6,4K = 3,8K$ entfernt. \newline
-Das $h $ in Formel \ref*{Erwaermung} bezieht sich auf eine 4-Fach so große Fläche als simmuliert wurde. Daher weicht der Wert ab. \newline
-Die Spice Simulation mit $\Delta T = 13K - 6,4K = 6,6 K$ ist weiter entfernt.  \newline
-Es wurde davon ausgegangen, dass der Wärmestrom der nicht direkt an die Umwelt abgegeben wird \newline
-immer 1,5mm durch das Dielektrikum fließt. Die Annahme scheint nicht zu stimmen. Auch wird das selbe  $h $ verwendet wie bei der Daumenregel. \newline
+Die erste Formel gilt als Daumenregel und ist von der simulierten Lösung um $\Delta T = 6,1K - 6,4K = 0,3K$ entfernt. \newline
+Das $h $ in Formel \ref*{Erwaermung} bezieht sich auf eine 2-Fach so große Fläche als simmuliert wurde. Daher weicht der Wert ab. \newline
+Die Spice Simulation mit $\Delta T = 8,8K - 6,4K = 2,4 K$ ist weiter entfernt.  \newline
+Es wurde davon ausgegangen, dass der Wärmestrom der nicht direkt an die Umwelt abgegeben wird
+immer 1,5mm durch das Dielektrikum fließt. Die Annahme scheint nicht zu stimmen. \newline
 $ \Theta_{*, Ambient} $ sind die dominierenden Faktoren in der Gleichung.  \newline
-Auch die Simulation hat einen Fehler. 
+Auch die FEM-Simulation hat einen Fehler in der Praxis. 
 Die Platinen in der Industrie sind größer als die simulierte Platine.
-Mit den berechneten Werten von Comsol kann mit Regelungstechnik ein genaueres Spice Model erzeugt werden.  \newline
+Mit den berechneten Werten von Comsol kann mit Grundlagen der Regelungstechnik ein genaueres Spice Model erzeugt werden.  \newline
 Die Formeln aus der Industrie enthalten Sicherheiten.
 \newline
-Für die meisten Platinenlayouts sollten die Werte aus der Industrie passen. 
-Im allgemeinen ist der Fehler vernachlässigbar bei guter Auslegung der Platine. 
+Für die meisten Platinenlayouts sind die Werte aus der Industrie in Ordnung und der Fehler vernachlässigbar. 
+\newline
+Wegen fehlender aktiver Last konnten keine Messwerte aufgenommen werden.
+%  bei guter Auslegung der Platine. 
 \noindent
 \begin{thebibliography}{9}
 
